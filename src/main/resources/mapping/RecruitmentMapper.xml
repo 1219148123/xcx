@@ -11,6 +11,16 @@
         <result column="z_owner" property="zOwner" jdbcType="INTEGER"/>
         <result column="z_status" property="zStatus" jdbcType="INTEGER"/>
     </resultMap>
+    <resultMap id="detail" type="com.wx.xcx.vo.RecruitmentVO">
+        <result column="z_id" property="zId" jdbcType="INTEGER"/>
+        <result column="z_title" property="zTitle" jdbcType="VARCHAR"/>
+        <result column="z_type" property="zType" jdbcType="INTEGER"/>
+        <result column="z_content" property="zContent" jdbcType="VARCHAR"/>
+        <result column="z_time" property="zTime" jdbcType="TIMESTAMP"/>
+        <result column="z_img" property="zImg" jdbcType="VARCHAR"/>
+        <result column="z_owner" property="zOwner" jdbcType="INTEGER"/>
+        <result column="z_status" property="zStatus" jdbcType="INTEGER"/>
+    </resultMap>
     <insert id="insert" parameterType="com.wx.xcx.entity.Recruitment">
         insert into recruitment ( z_title, z_type, z_content)
         values (#{zTitle,jdbcType=VARCHAR}, #{zType,jdbcType=INTEGER},
@@ -18,13 +28,25 @@
     </insert>
     <update id="update">
         update recruitment
-        set z_title=#{zTitle},z_type=#{zType},z_time=#{zTime}
-        z_content=#{zContent}
+        set z_title=#{zTitle},z_type=#{zType},z_time=#{zTime},z_content=#{zContent}
         where z_id=#{zId}
     </update>
     <delete id="delete">
-        delete *
-        from recruitment
+        delete from recruitment
         where z_id=#{zid}
     </delete>
+    <select id="allRecruitment" resultMap="BaseResultMap">
+        select *
+        from recruitment
+    </select>
+    <select id="getRecruitment" resultType="com.wx.xcx.vo.RecruitmentVO">
+        select *
+        from recruitment
+        where z_id=#{zid}
+    </select>
+    <select id="ZpDetail" resultMap="detail">
+        select *
+        from recruitment
+        where z_id=#{zid}
+    </select>
 </mapper>

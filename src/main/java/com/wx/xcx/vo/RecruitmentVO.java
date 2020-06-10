@@ -1,5 +1,6 @@
 package com.wx.xcx.vo;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
 
 import java.util.Date;
@@ -19,7 +20,7 @@ public class RecruitmentVO {
     private String zType;
 
     private String zContent;
-
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private Date zTime;
 
     private String zImg;

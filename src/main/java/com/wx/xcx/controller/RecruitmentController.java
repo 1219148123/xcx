@@ -2,13 +2,12 @@ package com.wx.xcx.controller;
 
 import com.wx.xcx.dto.RecruitmentDTO;
 import com.wx.xcx.service.RecruitmentService;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import com.wx.xcx.vo.RecruitmentVO;
+import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 import javax.validation.Valid;
+import java.util.List;
 
 /**
  * @author hanzs
@@ -23,7 +22,29 @@ public class RecruitmentController {
     RecruitmentService recruitmentService;
 
     @PostMapping("/add")
-    Integer addZp(@RequestBody @Valid RecruitmentDTO recruitmentDTO){
-        return  recruitmentService.insert(recruitmentDTO);
+    Integer addZp(@RequestBody @Valid RecruitmentDTO recruitmentDTO) {
+        return recruitmentService.insert(recruitmentDTO);
+    }
+
+    @GetMapping("/get")
+    List<RecruitmentVO> getAllZp() {
+        return recruitmentService.allRecruitment();
+    }
+
+    @DeleteMapping("/delete")
+    Integer deleteZp(String zip) {
+        return recruitmentService.delete(Integer.valueOf(zip));
+    }
+
+    @PostMapping("/update")
+    Integer updateZp(@RequestBody @Valid RecruitmentDTO recruitmentDTO) {
+        return recruitmentService.update(recruitmentDTO);
+    }
+
+    @GetMapping("/detail")
+    RecruitmentVO getZp(String zip) {
+        RecruitmentVO recruitment = recruitmentService.getRecruitment(Integer.valueOf(zip));
+        System.out.println(recruitment+"=---------------------");
+        return recruitment;
     }
 }
