@@ -39,11 +39,6 @@
         select *
         from recruitment
     </select>
-    <select id="getRecruitment" resultType="com.wx.xcx.vo.RecruitmentVO">
-        select *
-        from recruitment
-        where z_id=#{zid}
-    </select>
     <select id="ZpDetail" resultMap="detail">
         select *
         from recruitment

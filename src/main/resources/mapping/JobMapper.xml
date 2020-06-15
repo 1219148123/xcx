@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.wx.xcx.mapper.JobMapper">
+    <resultMap id="BaseResultMap" type="com.wx.xcx.entity.Job">
+        <result column="q_id" property="qId" jdbcType="INTEGER"/>
+        <result column="q_title" property="qTitle" jdbcType="INTEGER"/>
+        <result column="q_type" property="qType" jdbcType="INTEGER"/>
+        <result column="q_content" property="qContent" jdbcType="VARCHAR"/>
+        <result column="q_time" property="qTime" jdbcType="TIMESTAMP"/>
+        <result column="q_img" property="qImg" jdbcType="VARCHAR"/>
+        <result column="q_owner" property="qOwner" jdbcType="INTEGER"/>
+        <result column="q_status" property="qStatus" jdbcType="INTEGER"/>
+    </resultMap>
+    <insert id="insert" parameterType="com.wx.xcx.entity.Job">
+        insert into job ( q_title, q_type, q_content, q_time)
+        values (#{qTitle,jdbcType=INTEGER}, #{qType,jdbcType=INTEGER},
+        #{qContent,jdbcType=VARCHAR}, #{qTime,jdbcType=TIMESTAMP})
+    </insert>
+    <update id="updateQz">
+        update job
+        set q_title=#{qTitle},q_type=#{qType},q_content=#{qContent},q_time=#{qTime}
+        where q_id=#{qid}
+    </update>
+    <delete id="deleteQz">
+        delete from job
+        where q_id=#{qid}
+    </delete>
+    <select id="getAllQz" resultType="com.wx.xcx.vo.JobVO">
+        select * from job
+    </select>
+    <select id="getQzByQid" resultMap="BaseResultMap">
+        select *
+        from job
+        where q_id=#{qid}
+    </select>
+
+</mapper>
