@@ -41,7 +41,7 @@ public class JobController {
     }
 
     @GetMapping("/detail")
-    JobVO getQz(String qip) {
-        return jobService.getQzByQid(Integer.valueOf(qip));
+    JobVO getQz(String qid) {
+        return jobService.getQzByQid(Integer.valueOf(qid));
     }
 }

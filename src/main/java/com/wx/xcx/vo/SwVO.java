@@ -1,5 +1,6 @@
 package com.wx.xcx.vo;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
 
 import java.util.Date;
@@ -23,7 +24,7 @@ public class SwVO {
     private String sPhone;
 
     private String sPeople;
-
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private Date sTime;
 
     private String sImg;
