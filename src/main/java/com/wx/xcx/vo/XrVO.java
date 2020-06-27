@@ -15,7 +15,7 @@ import java.util.Date;
 public class XrVO {
     private Integer xId;
 
-    private Integer xTitle;
+    private String xTitle;
 
     private String xPhone;
 
@@ -30,4 +30,6 @@ public class XrVO {
     private Integer xOwner;
 
     private Integer xStatus;
+
+    private Double xMoney;
 }

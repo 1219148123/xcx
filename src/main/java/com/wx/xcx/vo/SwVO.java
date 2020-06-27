@@ -15,7 +15,7 @@ import java.util.Date;
 public class SwVO {
     private Integer sId;
 
-    private Integer sTitle;
+    private String sTitle;
 
     private Integer sType;
 
@@ -32,4 +32,6 @@ public class SwVO {
     private Integer sOwner;
 
     private Integer sStatus;
+
+    private Double sMoney;
 }

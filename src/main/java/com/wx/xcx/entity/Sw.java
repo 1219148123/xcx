@@ -5,7 +5,7 @@ import java.util.Date;
 public class Sw {
     private Integer sId;
 
-    private Integer sTitle;
+    private String sTitle;
 
     private Integer sType;
 
@@ -23,6 +23,8 @@ public class Sw {
 
     private Integer sStatus;
 
+    private Double sMoney;
+
     public Integer getsId() {
         return sId;
     }
@@ -31,11 +33,11 @@ public class Sw {
         this.sId = sId;
     }
 
-    public Integer getsTitle() {
+    public String getsTitle() {
         return sTitle;
     }
 
-    public void setsTitle(Integer sTitle) {
+    public void setsTitle(String sTitle) {
         this.sTitle = sTitle;
     }
 
@@ -101,5 +103,13 @@ public class Sw {
 
     public void setsStatus(Integer sStatus) {
         this.sStatus = sStatus;
+    }
+
+    public Double getsMoney() {
+        return sMoney;
+    }
+
+    public void setsMoney(Double sMoney) {
+        this.sMoney = sMoney;
     }
 }

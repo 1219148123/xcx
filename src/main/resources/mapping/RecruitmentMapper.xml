@@ -10,6 +10,7 @@
         <result column="z_img" property="zImg" jdbcType="VARCHAR"/>
         <result column="z_owner" property="zOwner" jdbcType="INTEGER"/>
         <result column="z_status" property="zStatus" jdbcType="INTEGER"/>
+        <result column="z_money" property="zMoney" jdbcType="DOUBLE"/>
     </resultMap>
     <resultMap id="detail" type="com.wx.xcx.vo.RecruitmentVO">
         <result column="z_id" property="zId" jdbcType="INTEGER"/>
@@ -20,15 +21,17 @@
         <result column="z_img" property="zImg" jdbcType="VARCHAR"/>
         <result column="z_owner" property="zOwner" jdbcType="INTEGER"/>
         <result column="z_status" property="zStatus" jdbcType="INTEGER"/>
+        <result column="z_money" property="zMoney" jdbcType="DOUBLE"/>
     </resultMap>
     <insert id="insert" parameterType="com.wx.xcx.entity.Recruitment">
-        insert into recruitment ( z_title, z_type, z_content)
+        insert into recruitment ( z_title, z_type, z_content,z_money)
         values (#{zTitle,jdbcType=VARCHAR}, #{zType,jdbcType=INTEGER},
-        #{zContent,jdbcType=VARCHAR})
+        #{zContent,jdbcType=VARCHAR},#{zMoney})
     </insert>
     <update id="update">
         update recruitment
-        set z_title=#{zTitle},z_type=#{zType},z_time=#{zTime},z_content=#{zContent}
+        set z_title=#{zTitle},z_type=#{zType},z_time=#{zTime},z_content=#{zContent},
+        z_money=#{zMoney}
         where z_id=#{zId}
     </update>
     <delete id="delete">

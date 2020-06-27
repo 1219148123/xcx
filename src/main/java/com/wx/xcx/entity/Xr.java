@@ -7,7 +7,7 @@ import java.util.Date;
 public class Xr {
     private Integer xId;
 
-    private Integer xTitle;
+    private String xTitle;
 
     private String xPhone;
 
@@ -23,6 +23,8 @@ public class Xr {
 
     private Integer xStatus;
 
+    private Double xMoney;
+
     public Integer getxId() {
         return xId;
     }
@@ -31,12 +33,16 @@ public class Xr {
         this.xId = xId;
     }
 
-    public Integer getxTitle() {
-        return xTitle;
+    public void setxTitle(String xTitle) {
+        this.xTitle = xTitle;
     }
 
-    public void setxTitle(Integer xTitle) {
-        this.xTitle = xTitle;
+    public Double getxMoney() {
+        return xMoney;
+    }
+
+    public void setxMoney(Double xMoney) {
+        this.xMoney = xMoney;
     }
 
     public String getxPhone() {

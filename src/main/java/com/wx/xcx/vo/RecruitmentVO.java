@@ -28,4 +28,6 @@ public class RecruitmentVO {
     private Integer zOwner;
 
     private Integer zStatus;
+
+    private Double zMoney;
 }

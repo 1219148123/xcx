@@ -5,7 +5,7 @@ import java.util.Date;
 public class Job {
     private Integer qId;
 
-    private Integer qTitle;
+    private String qTitle;
 
     private Integer qType;
 
@@ -19,6 +19,8 @@ public class Job {
 
     private Integer qStatus;
 
+    private Double qMoney;
+
     public Integer getqId() {
         return qId;
     }
@@ -27,11 +29,11 @@ public class Job {
         this.qId = qId;
     }
 
-    public Integer getqTitle() {
+    public String getqTitle() {
         return qTitle;
     }
 
-    public void setqTitle(Integer qTitle) {
+    public void setqTitle(String qTitle) {
         this.qTitle = qTitle;
     }
 
@@ -81,5 +83,13 @@ public class Job {
 
     public void setqStatus(Integer qStatus) {
         this.qStatus = qStatus;
+    }
+
+    public Double getqMoney() {
+        return qMoney;
+    }
+
+    public void setqMoney(Double qMoney) {
+        this.qMoney = qMoney;
     }
 }

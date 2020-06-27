@@ -19,6 +19,8 @@ public class Recruitment {
 
     private Integer zStatus;
 
+    private Double zMoney;
+
     public Integer getzId() {
         return zId;
     }
@@ -81,5 +83,13 @@ public class Recruitment {
 
     public void setzStatus(Integer zStatus) {
         this.zStatus = zStatus;
+    }
+
+    public Double getzMoney() {
+        return zMoney;
+    }
+
+    public void setzMoney(Double zMoney) {
+        this.zMoney = zMoney;
     }
 }

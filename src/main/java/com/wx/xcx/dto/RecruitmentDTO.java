@@ -29,5 +29,7 @@ public class RecruitmentDTO {
     @ApiModelProperty(value = "招聘内容", example = "", required = true, dataType = "String")
     private String zContent;
 
-//    private Integer zOwner;
+    //    private Integer zOwner;
+    @ApiModelProperty(value = "招聘工资", example = "", required = true, dataType = "Double")
+    private Double zMoney;
 }

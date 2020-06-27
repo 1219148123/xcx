@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.wx.xcx.mapper.XrMapper" >
-  <resultMap id="BaseResultMap" type="com.wx.xcx.entity.Xr" >
+  <resultMap id="BaseResultMap" type="com.wx.xcx.vo.XrVO" >
     <result column="x_id" property="xId" jdbcType="INTEGER" />
-    <result column="x_title" property="xTitle" jdbcType="INTEGER" />
+    <result column="x_title" property="xTitle" jdbcType="VARCHAR" />
     <result column="x_phone" property="xPhone" jdbcType="VARCHAR" />
     <result column="x_people" property="xPeople" jdbcType="VARCHAR" />
     <result column="x_content" property="xContent" jdbcType="VARCHAR" />
@@ -11,32 +11,31 @@
     <result column="x_img" property="xImg" jdbcType="VARCHAR" />
     <result column="x_owner" property="xOwner" jdbcType="INTEGER" />
     <result column="x_status" property="xStatus" jdbcType="INTEGER" />
+    <result column="x_money" property="xMoney" jdbcType="DOUBLE" />
   </resultMap>
   <insert id="insert" parameterType="com.wx.xcx.entity.Xr" >
-    insert into xr (x_id, x_title, x_phone, 
-      x_people, x_content, x_time, 
-      x_img, x_owner, x_status
+    insert into xr (x_title, x_phone,
+      x_people, x_content, x_time, x_money
       )
-    values (#{xId,jdbcType=INTEGER}, #{xTitle,jdbcType=INTEGER}, #{xPhone,jdbcType=VARCHAR}, 
-      #{xPeople,jdbcType=VARCHAR}, #{xContent,jdbcType=VARCHAR}, #{xTime,jdbcType=TIMESTAMP}, 
-      #{xImg,jdbcType=VARCHAR}, #{xOwner,jdbcType=INTEGER}, #{xStatus,jdbcType=INTEGER}
+    values (#{xTitle,jdbcType=INTEGER}, #{xPhone,jdbcType=VARCHAR},
+      #{xPeople,jdbcType=VARCHAR}, #{xContent,jdbcType=VARCHAR}, #{xTime,jdbcType=TIMESTAMP}, #{xMoney}
       )
   </insert>
   <update id="updateXr">
     update xr
-    set x_title=#{xTitle},x_phone=#{xPeople},x_people=#{xPeople},x_content=#{xContent},x_time=#{xTime}
-    where x_id=#{xid}
+    set x_title=#{xTitle},x_phone=#{xPeople},x_people=#{xPeople},x_content=#{xContent},x_time=#{xTime},x_money=#{xMoney}
+    where x_id=#{xId}
   </update>
   <delete id="deleteXr">
     delete from xr
-    where x_id=#{xid}
+    where x_id=#{xId}
   </delete>
-  <select id="seleteOneXr" resultType="com.wx.xcx.vo.XrVO">
+  <select id="seleteOneXr" resultMap="BaseResultMap">
     select * from xr
-    where x_id=#{xid}
+    where x_id=#{xId}
   </select>
-  <select id="seleteAllXr" resultType="com.wx.xcx.vo.XrVO">
-    selete * from xr
+  <select id="seleteAllXr" resultMap="BaseResultMap">
+    select * from xr
   </select>
 
 </mapper>

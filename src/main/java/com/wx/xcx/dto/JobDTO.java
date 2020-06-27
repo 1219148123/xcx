@@ -17,7 +17,7 @@ public class JobDTO {
     private Integer qId;
 
     @ApiModelProperty(value = "求职标题", example = "", required = true, dataType = "String")
-    private Integer qTitle;
+    private String qTitle;
 
     @ApiModelProperty(value = "求职类型", example = "", required = false, dataType = "Integer")
     private Integer qType;
@@ -25,4 +25,6 @@ public class JobDTO {
     @ApiModelProperty(value = "求职内容", example = "", required = true, dataType = "String")
     private String qContent;
 
+    @ApiModelProperty(value = "求职工资", example = "", required = true, dataType = "Double")
+    private Double qMoney;
 }

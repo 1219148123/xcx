@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.wx.xcx.mapper.SwMapper">
-    <resultMap id="BaseResultMap" type="com.wx.xcx.entity.Sw">
+    <resultMap id="BaseResultMap" type="com.wx.xcx.vo.SwVO">
         <result column="s_id" property="sId" jdbcType="INTEGER"/>
-        <result column="s_title" property="sTitle" jdbcType="INTEGER"/>
+        <result column="s_title" property="sTitle" jdbcType="VARCHAR"/>
         <result column="s_type" property="sType" jdbcType="INTEGER"/>
         <result column="s_content" property="sContent" jdbcType="VARCHAR"/>
         <result column="s_phone" property="sPhone" jdbcType="VARCHAR"/>
@@ -12,29 +12,30 @@
         <result column="s_img" property="sImg" jdbcType="VARCHAR"/>
         <result column="s_owner" property="sOwner" jdbcType="INTEGER"/>
         <result column="s_status" property="sStatus" jdbcType="INTEGER"/>
+        <result column="s_money" property="sMoney" jdbcType="DOUBLE"/>
     </resultMap>
     <insert id="insert" parameterType="com.wx.xcx.entity.Sw">
         insert into sw ( s_title, s_type,
-        s_content, s_phone, s_people, s_time)
+        s_content, s_phone, s_people, s_time,s_money)
         values ( #{sTitle,jdbcType=INTEGER}, #{sType,jdbcType=INTEGER},
         #{sContent,jdbcType=VARCHAR}, #{sPhone,jdbcType=VARCHAR}, #{sPeople,jdbcType=VARCHAR},
-        #{sTime,jdbcType=TIMESTAMP})
+        #{sTime,jdbcType=TIMESTAMP},#{sMoney})
     </insert>
     <update id="updateSw">
         update sw
         set s_title=#{sTitle},s_type=#{sType},s_content=#{sContent},s_phone=#{sPhone},
-        s_people=#{sPeople},s_time=#{sTime}
-        where s_id=#{sid}
+        s_people=#{sPeople},s_time=#{sTime},s_money=#{sMoney}
+        where s_id=#{sId}
     </update>
     <delete id="deleteSw">
         delete from sw
-        where s_id=#{sid}
+        where s_id=#{sId}
     </delete>
-    <select id="getAllSw" resultType="com.wx.xcx.vo.SwVO">
-        selete * from sw
+    <select id="getAllSw" resultMap="BaseResultMap">
+        select * from sw
     </select>
     <select id="getSwBySid" resultMap="BaseResultMap">
-        selete * from sw
-        where s_id=#{sid}
+        select * from sw
+        where s_id=#{sId}
     </select>
 </mapper>

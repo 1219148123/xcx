@@ -15,7 +15,7 @@ import java.util.Date;
 public class JobVO {
     private Integer qId;
 
-    private Integer qTitle;
+    private String qTitle;
 
     private Integer qType;
 
@@ -28,4 +28,6 @@ public class JobVO {
     private Integer qOwner;
 
     private Integer qStatus;
+
+    private Double qMoney;
 }
