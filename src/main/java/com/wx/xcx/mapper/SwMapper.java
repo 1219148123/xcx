@@ -18,4 +18,6 @@ public interface SwMapper {
     List<SwVO> getAllSw();
     //5.查询单个二手信息
     SwVO getSwBySid(Integer sid);
+
+    void updateImg(Sw sw);
 }

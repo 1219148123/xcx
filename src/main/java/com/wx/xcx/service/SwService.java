@@ -1,8 +1,6 @@
 package com.wx.xcx.service;
 
-import com.wx.xcx.dto.JobDTO;
 import com.wx.xcx.dto.SwDTO;
-import com.wx.xcx.entity.Job;
 import com.wx.xcx.vo.SwVO;
 
 import java.util.List;
@@ -15,7 +13,7 @@ import java.util.List;
  */
 public interface SwService {
     //1.发布失物招领
-    int insert(SwDTO swDTO);
+    int insert(SwDTO swDTO, String photo);
     //2.删除求职
     int deleteSw(Integer sid);
     //3.修改求职

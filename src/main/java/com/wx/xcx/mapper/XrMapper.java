@@ -16,4 +16,6 @@ public interface XrMapper {
     XrVO seleteOneXr(Integer xid);
     //5.查询所有得寻人启示
     List<XrVO> seleteAllXr();
+
+    void updateImg(Xr xr);
 }

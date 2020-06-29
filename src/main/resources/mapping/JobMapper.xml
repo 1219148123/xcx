@@ -12,7 +12,7 @@
         <result column="q_status" property="qStatus" jdbcType="INTEGER"/>
         <result column="q_money" property="qMoney" jdbcType="DOUBLE"/>
     </resultMap>
-    <insert id="insert" parameterType="com.wx.xcx.entity.Job">
+    <insert id="insert" parameterType="com.wx.xcx.entity.Job" useGeneratedKeys="true" keyProperty="qId">
         insert into job ( q_title, q_type, q_content, q_time,q_money)
         values (#{qTitle,jdbcType=INTEGER}, #{qType,jdbcType=INTEGER},
         #{qContent,jdbcType=VARCHAR},#{qTime,jdbcType=TIMESTAMP},#{qMoney})
@@ -21,6 +21,11 @@
         update job
         set q_title=#{qTitle},q_type=#{qType},q_content=#{qContent},q_time=#{qTime},
         q_money=#{qMoney}
+        where q_id=#{qId}
+    </update>
+    <update id="updateImg">
+        update job
+        set  q_img=#{qImg}
         where q_id=#{qId}
     </update>
     <delete id="deleteQz">

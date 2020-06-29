@@ -1,7 +1,6 @@
 package com.wx.xcx.service;
 
 import com.wx.xcx.dto.XrDTO;
-import com.wx.xcx.entity.Xr;
 import com.wx.xcx.vo.XrVO;
 
 import java.util.List;
@@ -14,7 +13,7 @@ import java.util.List;
  */
 public interface XrService {
     //1.插入寻人启事
-    int insert(XrDTO xrDTO);
+    int insert(XrDTO xrDTO, String photo);
     //2.修改寻人启事
     int updateXr(XrDTO xrDTO);
     //3.删除寻人启事

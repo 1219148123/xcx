@@ -23,12 +23,15 @@ public class XrServiceImpl implements XrService {
     @Resource
     XrMapper xrMapper;
     @Override
-    public int insert(XrDTO xrDTO) {
+    public int insert(XrDTO xrDTO, String photo) {
         Xr xr = new Xr();
         BeanUtils.copyProperties(xrDTO,xr);
         xr.setxOwner(1);
         xr.setxTime(new Date());
-        return xrMapper.insert(xr);
+        int res = xrMapper.insert(xr);
+        xr.setxImg(photo);
+        xrMapper.updateImg(xr);
+        return res;
     }
 
     @Override

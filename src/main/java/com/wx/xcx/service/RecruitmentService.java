@@ -12,7 +12,7 @@ import java.util.List;
  * @version : 1.0
  */
 public interface RecruitmentService {
-    int insert(RecruitmentDTO recruitmentDTO);
+    int insert(RecruitmentDTO recruitmentDTO, String photo);
 
     //删除信息
     int delete(Integer zid);

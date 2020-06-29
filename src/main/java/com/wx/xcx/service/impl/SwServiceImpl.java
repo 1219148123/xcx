@@ -23,12 +23,15 @@ public class SwServiceImpl implements SwService {
     @Resource
     SwMapper swMapper;
     @Override
-    public int insert(SwDTO swDTO) {
+    public int insert(SwDTO swDTO, String photo) {
         Sw sw = new Sw();
         BeanUtils.copyProperties(swDTO,sw);
         sw.setsOwner(1);
         sw.setsTime(new Date());
-        return swMapper.insert(sw);
+        int res = swMapper.insert(sw);
+        sw.setsImg(photo);
+        swMapper.updateImg(sw);
+        return res;
     }
 
     @Override

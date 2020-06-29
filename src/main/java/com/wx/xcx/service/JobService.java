@@ -1,7 +1,6 @@
 package com.wx.xcx.service;
 
 import com.wx.xcx.dto.JobDTO;
-import com.wx.xcx.entity.Job;
 import com.wx.xcx.vo.JobVO;
 
 import java.util.List;
@@ -14,7 +13,7 @@ import java.util.List;
  */
 public interface JobService {
     //1.发布求职
-    int insert(JobDTO jobDTO);
+    int insert(JobDTO jobDTO, String photo);
     //2.删除求职
     int deleteQz(Integer qid);
     //3.修改求职

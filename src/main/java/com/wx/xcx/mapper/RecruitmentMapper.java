@@ -21,4 +21,5 @@ public interface RecruitmentMapper {
     //获取zp详情
     RecruitmentVO ZpDetail(Integer zid);
 
+    void updateImg(Recruitment recruitment);
 }

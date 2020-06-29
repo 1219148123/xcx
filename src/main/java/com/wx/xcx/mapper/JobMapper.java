@@ -16,4 +16,6 @@ public interface JobMapper {
     List<JobVO> getAllQz();
     //5.查询单个求职
     JobVO getQzByQid(Integer qid);
+
+    void updateImg(Job job);
 }

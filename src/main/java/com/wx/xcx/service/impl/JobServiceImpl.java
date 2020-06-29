@@ -7,6 +7,7 @@ import com.wx.xcx.service.JobService;
 import com.wx.xcx.vo.JobVO;
 import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
 import java.util.Date;
@@ -22,13 +23,18 @@ import java.util.List;
 public class JobServiceImpl implements JobService {
     @Resource
     JobMapper jobMapper;
+
+    @Transactional
     @Override
-    public int insert(JobDTO jobDTO) {
+    public int insert(JobDTO jobDTO, String photo) {
         Job job = new Job();
         BeanUtils.copyProperties(jobDTO,job);
         job.setqOwner(1);
         job.setqTime(new Date());
-        return jobMapper.insert(job);
+        job.setqImg(photo);
+        int res = jobMapper.insert(job);
+        jobMapper.updateImg(job);
+        return res;
     }
 
     @Override

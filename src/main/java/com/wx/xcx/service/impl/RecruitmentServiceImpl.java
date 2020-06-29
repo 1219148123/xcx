@@ -25,7 +25,7 @@ public class RecruitmentServiceImpl implements RecruitmentService {
 
 
     @Override
-    public int insert(RecruitmentDTO recruitmentDTO) {
+    public int insert(RecruitmentDTO recruitmentDTO, String photo) {
         Recruitment recruitment = new Recruitment();
         BeanUtils.copyProperties(recruitmentDTO,recruitment);
         //设置发布时间
@@ -34,7 +34,10 @@ public class RecruitmentServiceImpl implements RecruitmentService {
         //设置发布人
         recruitment.setzOwner(1);
         //设置图片
-        return recruitmentMapper.insert(recruitment);
+        int res = recruitmentMapper.insert(recruitment);
+        recruitment.setzImg(photo);
+        recruitmentMapper.updateImg(recruitment);
+        return res;
     }
 
     @Override

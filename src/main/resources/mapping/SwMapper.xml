@@ -14,7 +14,7 @@
         <result column="s_status" property="sStatus" jdbcType="INTEGER"/>
         <result column="s_money" property="sMoney" jdbcType="DOUBLE"/>
     </resultMap>
-    <insert id="insert" parameterType="com.wx.xcx.entity.Sw">
+    <insert id="insert" parameterType="com.wx.xcx.entity.Sw"  useGeneratedKeys="true" keyProperty="sId">
         insert into sw ( s_title, s_type,
         s_content, s_phone, s_people, s_time,s_money)
         values ( #{sTitle,jdbcType=INTEGER}, #{sType,jdbcType=INTEGER},
@@ -25,6 +25,11 @@
         update sw
         set s_title=#{sTitle},s_type=#{sType},s_content=#{sContent},s_phone=#{sPhone},
         s_people=#{sPeople},s_time=#{sTime},s_money=#{sMoney}
+        where s_id=#{sId}
+    </update>
+    <update id="updateImg">
+        update sw
+        set s_img=#{sImg}
         where s_id=#{sId}
     </update>
     <delete id="deleteSw">
