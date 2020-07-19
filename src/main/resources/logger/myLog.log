@@ -1,0 +1,67 @@
+2020-07-19 13:14:29.194  INFO 20504 --- [main] com.wx.xcx.XcxApplication                : Starting XcxApplication on DESKTOP-8NN5IVC with PID 20504 (C:\Users\48738\Desktop\xcx\target\classes started by 48738 in C:\Users\48738\Desktop\xcx)
+2020-07-19 13:14:29.210  INFO 20504 --- [main] com.wx.xcx.XcxApplication                : No active profile set, falling back to default profiles: default
+2020-07-19 13:14:31.008 ERROR 20504 --- [main] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.2.8] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2020-07-19 13:14:31.149 ERROR 20504 --- [main] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.2.8] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2020-07-19 13:14:31.227  INFO 20504 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9797 (http)
+2020-07-19 13:14:31.242 ERROR 20504 --- [main] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.2.8] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2020-07-19 13:14:31.242  INFO 20504 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-19 13:14:31.242  INFO 20504 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-07-19 13:14:31.340  INFO 20504 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-19 13:14:31.340  INFO 20504 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2004 ms
+2020-07-19 13:14:32.858  INFO 20504 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-07-19 13:14:32.936  INFO 20504 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-19 13:14:33.139  INFO 20504 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9797 (http) with context path ''
+2020-07-19 13:14:33.139  INFO 20504 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-07-19 13:14:33.155  INFO 20504 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-07-19 13:14:33.186  INFO 20504 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-07-19 13:14:33.383  INFO 20504 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: testUsingPOST_1
+2020-07-19 13:14:33.412  INFO 20504 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: testUsingPOST_2
+2020-07-19 13:14:33.437  INFO 20504 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: testUsingPOST_3
+2020-07-19 13:14:33.462  INFO 20504 --- [main] com.wx.xcx.XcxApplication                : Started XcxApplication in 5.095 seconds (JVM running for 6.547)
+2020-07-19 13:14:33.465  INFO 20504 --- [main] com.wx.xcx.XcxApplication                : 项目加载完毕
+2020-07-19 13:14:51.479  INFO 20504 --- [http-nio-9797-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-19 13:14:51.479  INFO 20504 --- [http-nio-9797-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-19 13:14:51.491  INFO 20504 --- [http-nio-9797-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2020-07-19 13:14:51.541  INFO 20504 --- [http-nio-9797-exec-1] com.zaxxer.hikari.HikariDataSource       : DateSourceHikariCP - Starting...
+2020-07-19 13:14:51.689  INFO 20504 --- [http-nio-9797-exec-1] com.zaxxer.hikari.HikariDataSource       : DateSourceHikariCP - Start completed.
+2020-07-19 13:14:51.698 DEBUG 20504 --- [http-nio-9797-exec-1] com.wx.xcx.mapper.JobMapper.getAllQz     : ==>  Preparing: select * from job 
+2020-07-19 13:14:51.733 DEBUG 20504 --- [http-nio-9797-exec-1] com.wx.xcx.mapper.JobMapper.getAllQz     : ==> Parameters: 
+2020-07-19 13:14:51.768 DEBUG 20504 --- [http-nio-9797-exec-1] com.wx.xcx.mapper.JobMapper.getAllQz     : <==      Total: 9
+2020-07-19 13:15:42.850 DEBUG 20504 --- [http-nio-9797-exec-2] com.wx.xcx.mapper.JobMapper.getAllQz     : ==>  Preparing: select * from job 
+2020-07-19 13:15:42.850 DEBUG 20504 --- [http-nio-9797-exec-2] com.wx.xcx.mapper.JobMapper.getAllQz     : ==> Parameters: 
+2020-07-19 13:15:42.857 DEBUG 20504 --- [http-nio-9797-exec-2] com.wx.xcx.mapper.JobMapper.getAllQz     : <==      Total: 9
+2020-07-19 13:20:32.280  INFO 10548 --- [main] com.wx.xcx.XcxApplication                : Starting XcxApplication on DESKTOP-8NN5IVC with PID 10548 (C:\Users\48738\Desktop\xcx\target\classes started by 48738 in C:\Users\48738\Desktop\xcx)
+2020-07-19 13:20:32.280  INFO 10548 --- [main] com.wx.xcx.XcxApplication                : No active profile set, falling back to default profiles: default
+2020-07-19 13:20:33.850 ERROR 10548 --- [main] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.2.8] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2020-07-19 13:20:33.991 ERROR 10548 --- [main] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.2.8] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2020-07-19 13:20:34.069  INFO 10548 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9797 (http)
+2020-07-19 13:20:34.085 ERROR 10548 --- [main] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.2.8] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2020-07-19 13:20:34.085  INFO 10548 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-19 13:20:34.085  INFO 10548 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-07-19 13:20:34.194  INFO 10548 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-19 13:20:34.194  INFO 10548 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1773 ms
+2020-07-19 13:20:35.746  INFO 10548 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-07-19 13:20:35.840  INFO 10548 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-19 13:20:36.027  INFO 10548 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9797 (http) with context path ''
+2020-07-19 13:20:36.027  INFO 10548 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-07-19 13:20:36.043  INFO 10548 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-07-19 13:20:36.074  INFO 10548 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-07-19 13:20:36.246  INFO 10548 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: testUsingPOST_1
+2020-07-19 13:20:36.277  INFO 10548 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: testUsingPOST_2
+2020-07-19 13:20:36.308  INFO 10548 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: testUsingPOST_3
+2020-07-19 13:20:36.334  INFO 10548 --- [main] com.wx.xcx.XcxApplication                : Started XcxApplication in 4.801 seconds (JVM running for 6.071)
+2020-07-19 13:20:36.338  INFO 10548 --- [main] com.wx.xcx.XcxApplication                : 项目加载完毕
+2020-07-19 13:20:50.498  INFO 10548 --- [http-nio-9797-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-19 13:20:50.499  INFO 10548 --- [http-nio-9797-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-19 13:20:50.510  INFO 10548 --- [http-nio-9797-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2020-07-19 13:20:50.560  INFO 10548 --- [http-nio-9797-exec-1] com.zaxxer.hikari.HikariDataSource       : DateSourceHikariCP - Starting...
+2020-07-19 13:20:51.586  INFO 10548 --- [http-nio-9797-exec-1] com.zaxxer.hikari.HikariDataSource       : DateSourceHikariCP - Start completed.
+2020-07-19 13:20:51.594 DEBUG 10548 --- [http-nio-9797-exec-1] com.wx.xcx.mapper.JobMapper.getAllQz     : ==>  Preparing: select * from job 
+2020-07-19 13:20:51.622 DEBUG 10548 --- [http-nio-9797-exec-1] com.wx.xcx.mapper.JobMapper.getAllQz     : ==> Parameters: 
+2020-07-19 13:20:51.730 DEBUG 10548 --- [http-nio-9797-exec-1] com.wx.xcx.mapper.JobMapper.getAllQz     : <==      Total: 9
+2020-07-19 13:21:29.766 DEBUG 10548 --- [http-nio-9797-exec-3] com.wx.xcx.mapper.JobMapper.insert       : ==>  Preparing: insert into job ( q_title, q_type, q_content, q_time,q_money) values (?, ?, ?,?,?) 
+2020-07-19 13:21:29.768 DEBUG 10548 --- [http-nio-9797-exec-3] com.wx.xcx.mapper.JobMapper.insert       : ==> Parameters: string(String), 0(Integer), string(String), 2020-07-19 13:21:29.762(Timestamp), 0.0(Double)
+2020-07-19 13:21:30.135 DEBUG 10548 --- [http-nio-9797-exec-3] com.wx.xcx.mapper.JobMapper.insert       : <==    Updates: 1
+2020-07-19 13:21:30.139 DEBUG 10548 --- [http-nio-9797-exec-3] com.wx.xcx.mapper.JobMapper.updateImg    : ==>  Preparing: update job set q_img=? where q_id=? 
+2020-07-19 13:21:30.139 DEBUG 10548 --- [http-nio-9797-exec-3] com.wx.xcx.mapper.JobMapper.updateImg    : ==> Parameters: https://hzsfile.oss-cn-beijing.aliyuncs.com/images/2020/07/19/15951360855981675.png(String), 11(Integer)
+2020-07-19 13:21:30.237 DEBUG 10548 --- [http-nio-9797-exec-3] com.wx.xcx.mapper.JobMapper.updateImg    : <==    Updates: 1
