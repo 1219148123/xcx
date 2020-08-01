@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.wx.xcx.mapper.RecruitMapper">
+    <resultMap id="BaseResultMap" type="com.wx.xcx.entity.Recruit">
+        <result column="z_id" property="zId" jdbcType="INTEGER"/>
+        <result column="z_work_content" property="zWorkContent" jdbcType="VARCHAR"/>
+        <result column="z_type" property="zType" jdbcType="INTEGER"/>
+        <result column="z_work_requirement" property="zWorkRequirement" jdbcType="VARCHAR"/>
+        <result column="z_time" property="zTime" jdbcType="TIMESTAMP"/>
+        <result column="z_work_phone" property="zWorkPhone" jdbcType="VARCHAR"/>
+        <result column="z_status" property="zStatus" jdbcType="INTEGER"/>
+        <result column="z_work_salary" property="zWorkSalary" jdbcType="VARCHAR"/>
+        <result column="z_work_email" property="zWorkEmail" jdbcType="VARCHAR"/>
+        <result column="z_work_address" property="zWorkAddress" jdbcType="VARCHAR"/>
+        <result column="z_work_period" property="zWorkPeriod" jdbcType="VARCHAR"/>
+    </resultMap>
+    <resultMap id="recruitVO" type="com.wx.xcx.vo.RecruitVO">
+        <result column="z_id" property="zId" jdbcType="INTEGER"/>
+        <result column="z_work_content" property="zWorkContent" jdbcType="VARCHAR"/>
+        <result column="z_type" property="zType" jdbcType="INTEGER"/>
+        <result column="z_work_requirement" property="zWorkRequirement" jdbcType="VARCHAR"/>
+        <result column="z_time" property="zTime" jdbcType="TIMESTAMP"/>
+        <result column="z_work_phone" property="zWorkPhone" jdbcType="VARCHAR"/>
+        <result column="z_status" property="zStatus" jdbcType="INTEGER"/>
+        <result column="z_work_salary" property="zWorkSalary" jdbcType="VARCHAR"/>
+        <result column="z_work_email" property="zWorkEmail" jdbcType="VARCHAR"/>
+        <result column="z_work_address" property="zWorkAddress" jdbcType="VARCHAR"/>
+        <result column="z_work_period" property="zWorkPeriod" jdbcType="VARCHAR"/>
+        <association property="workType" javaType="com.wx.xcx.entity.WorkType">
+            <result column="work_type_id" jdbcType="INTEGER" property="workTypeId"/>
+            <result column="work_type_value" jdbcType="VARCHAR" property="workTypeValue"/>
+        </association>
+    </resultMap>
+    <insert id="insert" parameterType="com.wx.xcx.entity.Recruit">
+    insert into recruit (z_id, z_work_content, z_type, 
+      z_work_requirement, z_time, z_work_phone, 
+      z_status, z_work_salary, z_work_email, 
+      z_work_address, z_work_period)
+    values (#{zId,jdbcType=INTEGER}, #{zWorkContent,jdbcType=VARCHAR}, #{zType,jdbcType=INTEGER}, 
+      #{zWorkRequirement,jdbcType=VARCHAR}, #{zTime,jdbcType=TIMESTAMP}, #{zWorkPhone,jdbcType=VARCHAR}, 
+      #{zStatus,jdbcType=INTEGER}, #{zWorkSalary,jdbcType=VARCHAR}, #{zWorkEmail,jdbcType=VARCHAR}, 
+      #{zWorkAddress,jdbcType=VARCHAR}, #{zWorkPeriod,jdbcType=VARCHAR})
+  </insert>
+    <insert id="insertSelective" parameterType="com.wx.xcx.entity.Recruit">
+        insert into recruit
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="zId != null">
+                z_id,
+            </if>
+            <if test="zWorkContent != null">
+                z_work_content,
+            </if>
+            <if test="zType != null">
+                z_type,
+            </if>
+            <if test="zWorkRequirement != null">
+                z_work_requirement,
+            </if>
+            <if test="zTime != null">
+                z_time,
+            </if>
+            <if test="zWorkPhone != null">
+                z_work_phone,
+            </if>
+            <if test="zStatus != null">
+                z_status,
+            </if>
+            <if test="zWorkSalary != null">
+                z_work_salary,
+            </if>
+            <if test="zWorkEmail != null">
+                z_work_email,
+            </if>
+            <if test="zWorkAddress != null">
+                z_work_address,
+            </if>
+            <if test="zWorkPeriod != null">
+                z_work_period,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="zId != null">
+                #{zId,jdbcType=INTEGER},
+            </if>
+            <if test="zWorkContent != null">
+                #{zWorkContent,jdbcType=VARCHAR},
+            </if>
+            <if test="zType != null">
+                #{zType,jdbcType=INTEGER},
+            </if>
+            <if test="zWorkRequirement != null">
+                #{zWorkRequirement,jdbcType=VARCHAR},
+            </if>
+            <if test="zTime != null">
+                #{zTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="zWorkPhone != null">
+                #{zWorkPhone,jdbcType=VARCHAR},
+            </if>
+            <if test="zStatus != null">
+                #{zStatus,jdbcType=INTEGER},
+            </if>
+            <if test="zWorkSalary != null">
+                #{zWorkSalary,jdbcType=VARCHAR},
+            </if>
+            <if test="zWorkEmail != null">
+                #{zWorkEmail,jdbcType=VARCHAR},
+            </if>
+            <if test="zWorkAddress != null">
+                #{zWorkAddress,jdbcType=VARCHAR},
+            </if>
+            <if test="zWorkPeriod != null">
+                #{zWorkPeriod,jdbcType=VARCHAR},
+            </if>
+        </trim>
+    </insert>
+    <insert id="insertRecruit" useGeneratedKeys="true" keyProperty="zId">
+    insert into recruit (z_work_content, z_type,
+      z_work_requirement, z_time, z_work_phone,
+     z_work_salary, z_work_email,
+      z_work_address, z_work_period)
+    values (#{zWorkContent,jdbcType=VARCHAR}, #{zType,jdbcType=INTEGER},
+      #{zWorkRequirement,jdbcType=VARCHAR}, #{zTime,jdbcType=TIMESTAMP}, #{zWorkPhone,jdbcType=VARCHAR},
+     #{zWorkSalary,jdbcType=VARCHAR}, #{zWorkEmail,jdbcType=VARCHAR},
+      #{zWorkAddress,jdbcType=VARCHAR}, #{zWorkPeriod,jdbcType=VARCHAR})
+  </insert>
+    <select id="recruitDetail" resultMap="recruitVO">
+    select r.z_id,r.z_work_content,r.z_type,r.z_work_requirement,r.z_time,r.z_work_phone,r.z_status,r.z_work_salary,r.z_work_email,
+      r.z_work_address,r.z_work_period,w.work_type_id,w.work_type_value
+    from recruit r,work_type w
+    where r.z_type=w.work_type_id
+    and r.z_id=#{zId}
+  </select>
+    <select id="recruitList" resultMap="recruitVO">
+    select r.z_id,r.z_work_content,r.z_type,r.z_work_requirement,r.z_time,r.z_work_phone,r.z_status,r.z_work_salary,r.z_work_email,
+      r.z_work_address,r.z_work_period,w.work_type_id,w.work_type_value
+    from recruit r,work_type w
+    where r.z_type=w.work_type_id
+  </select>
+</mapper>

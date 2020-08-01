@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.wx.xcx.mapper.FindJobMapper" >
+  <resultMap id="BaseResultMap" type="com.wx.xcx.entity.FindJob" >
+    <result column="q_id" property="qId" jdbcType="INTEGER" />
+    <result column="self_ability" property="selfAbility" jdbcType="VARCHAR" />
+    <result column="q_type" property="qType" jdbcType="INTEGER" />
+    <result column="expected_salary" property="expectedSalary" jdbcType="VARCHAR" />
+    <result column="q_time" property="qTime" jdbcType="TIMESTAMP" />
+    <result column="self_email" property="selfEmail" jdbcType="VARCHAR" />
+    <result column="self_phone" property="selfPhone" jdbcType="VARCHAR" />
+    <result column="q_status" property="qStatus" jdbcType="INTEGER" />
+    <result column="self_name" property="selfName" jdbcType="VARCHAR" />
+    <result column="edu_id" property="eduId" jdbcType="INTEGER" />
+  </resultMap>
+  <resultMap id="findJobVO" type="com.wx.xcx.vo.FindJobVO" >
+    <result column="q_id" property="qId" jdbcType="INTEGER" />
+    <result column="self_ability" property="selfAbility" jdbcType="VARCHAR" />
+    <result column="q_type" property="qType" jdbcType="INTEGER" />
+    <result column="expected_salary" property="expectedSalary" jdbcType="VARCHAR" />
+    <result column="q_time" property="qTime" jdbcType="TIMESTAMP" />
+    <result column="self_email" property="selfEmail" jdbcType="VARCHAR" />
+    <result column="self_phone" property="selfPhone" jdbcType="VARCHAR" />
+    <result column="q_status" property="qStatus" jdbcType="INTEGER" />
+    <result column="self_name" property="selfName" jdbcType="VARCHAR" />
+    <result column="edu_id" property="eduId" jdbcType="INTEGER" />
+    <association property="workType" javaType="com.wx.xcx.entity.WorkType">
+      <result column="work_type_id" jdbcType="INTEGER" property="workTypeId" />
+      <result column="work_type_value" jdbcType="VARCHAR" property="workTypeValue" />
+    </association>
+    <association property="education" javaType="com.wx.xcx.entity.Education">
+      <result column="edu_id" jdbcType="INTEGER" property="eduId" />
+      <result column="edu_value" jdbcType="VARCHAR" property="eduValue" />
+    </association>
+  </resultMap>
+  <insert id="insert" parameterType="com.wx.xcx.entity.FindJob" >
+    insert into find_job (q_id, self_ability, q_type, 
+      expected_salary, q_time, self_email, 
+      self_phone, q_status, self_name, 
+      edu_id)
+    values (#{qId,jdbcType=INTEGER}, #{selfAbility,jdbcType=VARCHAR}, #{qType,jdbcType=INTEGER}, 
+      #{expectedSalary,jdbcType=VARCHAR}, #{qTime,jdbcType=TIMESTAMP}, #{selfEmail,jdbcType=VARCHAR}, 
+      #{selfPhone,jdbcType=VARCHAR}, #{qStatus,jdbcType=INTEGER}, #{selfName,jdbcType=VARCHAR}, 
+      #{eduId,jdbcType=INTEGER})
+  </insert>
+  <insert id="insertSelective" parameterType="com.wx.xcx.entity.FindJob" >
+    insert into find_job
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="qId != null" >
+        q_id,
+      </if>
+      <if test="selfAbility != null" >
+        self_ability,
+      </if>
+      <if test="qType != null" >
+        q_type,
+      </if>
+      <if test="expectedSalary != null" >
+        expected_salary,
+      </if>
+      <if test="qTime != null" >
+        q_time,
+      </if>
+      <if test="selfEmail != null" >
+        self_email,
+      </if>
+      <if test="selfPhone != null" >
+        self_phone,
+      </if>
+      <if test="qStatus != null" >
+        q_status,
+      </if>
+      <if test="selfName != null" >
+        self_name,
+      </if>
+      <if test="eduId != null" >
+        edu_id,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="qId != null" >
+        #{qId,jdbcType=INTEGER},
+      </if>
+      <if test="selfAbility != null" >
+        #{selfAbility,jdbcType=VARCHAR},
+      </if>
+      <if test="qType != null" >
+        #{qType,jdbcType=INTEGER},
+      </if>
+      <if test="expectedSalary != null" >
+        #{expectedSalary,jdbcType=VARCHAR},
+      </if>
+      <if test="qTime != null" >
+        #{qTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="selfEmail != null" >
+        #{selfEmail,jdbcType=VARCHAR},
+      </if>
+      <if test="selfPhone != null" >
+        #{selfPhone,jdbcType=VARCHAR},
+      </if>
+      <if test="qStatus != null" >
+        #{qStatus,jdbcType=INTEGER},
+      </if>
+      <if test="selfName != null" >
+        #{selfName,jdbcType=VARCHAR},
+      </if>
+      <if test="eduId != null" >
+        #{eduId,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+    <insert id="findJobInsert" useGeneratedKeys="true" keyProperty="qId">
+      insert into find_job ( self_ability, q_type,
+      expected_salary, q_time, self_email,
+      self_phone, self_name,
+      edu_id)
+    values ( #{selfAbility,jdbcType=VARCHAR}, #{qType,jdbcType=INTEGER},
+      #{expectedSalary,jdbcType=VARCHAR}, #{qTime,jdbcType=TIMESTAMP}, #{selfEmail,jdbcType=VARCHAR},
+      #{selfPhone,jdbcType=VARCHAR}, #{selfName,jdbcType=VARCHAR},
+      #{eduId,jdbcType=INTEGER})
+    </insert>
+  <select id="findJobDetail"  resultMap="findJobVO">
+    select f.q_id, f.self_ability, f.q_type,
+      f.expected_salary, f.q_time, f.self_email,
+      f.self_phone, f.q_status, f.self_name,
+      f.edu_id,e.edu_id,e.edu_value,w.work_type_id,w.work_type_value
+    from find_job f,education e,work_type w
+    where f.edu_id=e.edu_id
+    and f.q_type=w.work_type_id
+    and f.q_id=#{qId}
+  </select>
+  <select id="findJobList"  resultMap="findJobVO">
+    select f.q_id, f.self_ability, f.q_type,
+      f.expected_salary, f.q_time, f.self_email,
+      f.self_phone, f.q_status, f.self_name,
+      f.edu_id,e.edu_id,e.edu_value,w.work_type_id,w.work_type_value
+    from find_job f,education e,work_type w
+    where f.edu_id=e.edu_id
+    and f.q_type=w.work_type_id
+    <if test="eduId != null and eduId != 0">
+        and f.edu_id=#{eduId}
+    </if>
+  </select>
+</mapper>

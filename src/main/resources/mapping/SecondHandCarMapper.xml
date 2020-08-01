@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.wx.xcx.mapper.SecondHandCarMapper" >
+  <resultMap id="BaseResultMap" type="com.wx.xcx.entity.SecondHandCar" >
+    <result column="car_id" property="carId" jdbcType="INTEGER" />
+    <result column="car_age" property="carAge" jdbcType="VARCHAR" />
+    <result column="car_type" property="carType" jdbcType="INTEGER" />
+    <result column="car_kilometre" property="carKilometre" jdbcType="VARCHAR" />
+    <result column="car_phone" property="carPhone" jdbcType="VARCHAR" />
+    <result column="car_people" property="carPeople" jdbcType="VARCHAR" />
+    <result column="car_time" property="carTime" jdbcType="TIMESTAMP" />
+    <result column="car_img" property="carImg" jdbcType="VARCHAR" />
+    <result column="car_status" property="carStatus" jdbcType="INTEGER" />
+    <result column="car_original_price" property="carOriginalPrice" jdbcType="VARCHAR" />
+    <result column="car_now_price" property="carNowPrice" jdbcType="VARCHAR" />
+  </resultMap>
+  <resultMap id="carVO" type="com.wx.xcx.vo.SecondHandCarVO">
+    <result column="car_id" property="carId" jdbcType="INTEGER" />
+    <result column="car_age" property="carAge" jdbcType="VARCHAR" />
+    <result column="car_type" property="carType" jdbcType="INTEGER" />
+    <result column="car_kilometre" property="carKilometre" jdbcType="VARCHAR" />
+    <result column="car_phone" property="carPhone" jdbcType="VARCHAR" />
+    <result column="car_people" property="carPeople" jdbcType="VARCHAR" />
+    <result column="car_time" property="carTime" jdbcType="TIMESTAMP" />
+    <result column="car_img" property="carImg" jdbcType="VARCHAR" />
+    <result column="car_status" property="carStatus" jdbcType="INTEGER" />
+    <result column="car_original_price" property="carOriginalPrice" jdbcType="VARCHAR" />
+    <result column="car_now_price" property="carNowPrice" jdbcType="VARCHAR" />
+    <association property="type" javaType="com.wx.xcx.entity.CarType">
+      <result column="car_type_id" jdbcType="INTEGER" property="carTypeId" />
+      <result column="car_type_value" jdbcType="VARCHAR" property="carTypeValue" />
+    </association>
+  </resultMap>
+  <insert id="insert" parameterType="com.wx.xcx.entity.SecondHandCar" >
+    insert into second_hand_car (car_id, car_age, car_type, 
+      car_kilometre, car_phone, car_people, 
+      car_time, car_img, car_status, 
+      car_original_price, car_now_price)
+    values (#{carId,jdbcType=INTEGER}, #{carAge,jdbcType=VARCHAR}, #{carType,jdbcType=INTEGER}, 
+      #{carKilometre,jdbcType=VARCHAR}, #{carPhone,jdbcType=VARCHAR}, #{carPeople,jdbcType=VARCHAR}, 
+      #{carTime,jdbcType=TIMESTAMP}, #{carImg,jdbcType=VARCHAR}, #{carStatus,jdbcType=INTEGER}, 
+      #{carOriginalPrice,jdbcType=VARCHAR}, #{carNowPrice,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.wx.xcx.entity.SecondHandCar" >
+    insert into second_hand_car
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="carId != null" >
+        car_id,
+      </if>
+      <if test="carAge != null" >
+        car_age,
+      </if>
+      <if test="carType != null" >
+        car_type,
+      </if>
+      <if test="carKilometre != null" >
+        car_kilometre,
+      </if>
+      <if test="carPhone != null" >
+        car_phone,
+      </if>
+      <if test="carPeople != null" >
+        car_people,
+      </if>
+      <if test="carTime != null" >
+        car_time,
+      </if>
+      <if test="carImg != null" >
+        car_img,
+      </if>
+      <if test="carStatus != null" >
+        car_status,
+      </if>
+      <if test="carOriginalPrice != null" >
+        car_original_price,
+      </if>
+      <if test="carNowPrice != null" >
+        car_now_price,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="carId != null" >
+        #{carId,jdbcType=INTEGER},
+      </if>
+      <if test="carAge != null" >
+        #{carAge,jdbcType=VARCHAR},
+      </if>
+      <if test="carType != null" >
+        #{carType,jdbcType=INTEGER},
+      </if>
+      <if test="carKilometre != null" >
+        #{carKilometre,jdbcType=VARCHAR},
+      </if>
+      <if test="carPhone != null" >
+        #{carPhone,jdbcType=VARCHAR},
+      </if>
+      <if test="carPeople != null" >
+        #{carPeople,jdbcType=VARCHAR},
+      </if>
+      <if test="carTime != null" >
+        #{carTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="carImg != null" >
+        #{carImg,jdbcType=VARCHAR},
+      </if>
+      <if test="carStatus != null" >
+        #{carStatus,jdbcType=INTEGER},
+      </if>
+      <if test="carOriginalPrice != null" >
+        #{carOriginalPrice,jdbcType=VARCHAR},
+      </if>
+      <if test="carNowPrice != null" >
+        #{carNowPrice,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+    <insert id="carInsert" useGeneratedKeys="true" keyProperty="carId">
+        insert into second_hand_car ( car_age, car_type,
+      car_kilometre, car_phone, car_people,
+      car_time, car_img, car_original_price, car_now_price)
+    values ( #{carAge,jdbcType=VARCHAR}, #{carType,jdbcType=INTEGER},
+      #{carKilometre,jdbcType=VARCHAR}, #{carPhone,jdbcType=VARCHAR}, #{carPeople,jdbcType=VARCHAR},
+      #{carTime,jdbcType=TIMESTAMP}, #{carImg,jdbcType=VARCHAR},
+      #{carOriginalPrice,jdbcType=VARCHAR}, #{carNowPrice,jdbcType=VARCHAR})
+    </insert>
+  <select id="carDetail" resultMap="carVO">
+    select s.car_id, s.car_age, s.car_type,
+      s.car_kilometre, s.car_phone, s.car_people,
+      s.car_time, s.car_img, s.car_status,
+      s.car_original_price, s.car_now_price , c.car_type_id,c.car_type_value
+    from second_hand_car s,car_type c
+    where s.car_type=c.car_type_id
+    and s.car_id=#{carId}
+  </select>
+  <select id="carList" resultMap="carVO">
+    select s.car_id, s.car_age, s.car_type,
+      s.car_kilometre, s.car_phone, s.car_people,
+      s.car_time, s.car_img, s.car_status,
+      s.car_original_price, s.car_now_price , c.car_type_id,c.car_type_value
+    from second_hand_car s,car_type c
+    where s.car_type=c.car_type_id
+    <if test="carType != null and carType != 0">
+      and s.car_type=#{carType}
+    </if>
+  </select>
+</mapper>

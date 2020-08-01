@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.wx.xcx.mapper.SecondHandHouseMapper">
+    <resultMap id="BaseResultMap" type="com.wx.xcx.entity.SecondHandHouse">
+        <result column="h_id" property="hId" jdbcType="INTEGER"/>
+        <result column="h_address" property="hAddress" jdbcType="VARCHAR"/>
+        <result column="h_phone" property="hPhone" jdbcType="VARCHAR"/>
+        <result column="h_people" property="hPeople" jdbcType="VARCHAR"/>
+        <result column="h_content" property="hContent" jdbcType="VARCHAR"/>
+        <result column="h_time" property="hTime" jdbcType="TIMESTAMP"/>
+        <result column="h_img" property="hImg" jdbcType="VARCHAR"/>
+        <result column="h_status" property="hStatus" jdbcType="INTEGER"/>
+        <result column="h_money" property="hMoney" jdbcType="VARCHAR"/>
+    </resultMap>
+    <resultMap id="houseVO" type="com.wx.xcx.vo.SecondHandHouseVO">
+        <result column="h_id" property="hId" jdbcType="INTEGER"/>
+        <result column="h_address" property="hAddress" jdbcType="VARCHAR"/>
+        <result column="h_phone" property="hPhone" jdbcType="VARCHAR"/>
+        <result column="h_people" property="hPeople" jdbcType="VARCHAR"/>
+        <result column="h_content" property="hContent" jdbcType="VARCHAR"/>
+        <result column="h_time" property="hTime" jdbcType="TIMESTAMP"/>
+        <result column="h_img" property="hImg" jdbcType="VARCHAR"/>
+        <result column="h_status" property="hStatus" jdbcType="INTEGER"/>
+        <result column="h_money" property="hMoney" jdbcType="VARCHAR"/>
+    </resultMap>
+    <insert id="insert" parameterType="com.wx.xcx.entity.SecondHandHouse">
+    insert into second_hand_house (h_id, h_address, h_phone, 
+      h_people, h_content, h_time, 
+      h_img, h_status, h_money
+      )
+    values (#{hId,jdbcType=INTEGER}, #{hAddress,jdbcType=VARCHAR}, #{hPhone,jdbcType=VARCHAR}, 
+      #{hPeople,jdbcType=VARCHAR}, #{hContent,jdbcType=VARCHAR}, #{hTime,jdbcType=TIMESTAMP}, 
+      #{hImg,jdbcType=VARCHAR}, #{hStatus,jdbcType=INTEGER}, #{hMoney,jdbcType=VARCHAR}
+      )
+  </insert>
+    <insert id="insertSelective" parameterType="com.wx.xcx.entity.SecondHandHouse">
+        insert into second_hand_house
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="hId != null">
+                h_id,
+            </if>
+            <if test="hAddress != null">
+                h_address,
+            </if>
+            <if test="hPhone != null">
+                h_phone,
+            </if>
+            <if test="hPeople != null">
+                h_people,
+            </if>
+            <if test="hContent != null">
+                h_content,
+            </if>
+            <if test="hTime != null">
+                h_time,
+            </if>
+            <if test="hImg != null">
+                h_img,
+            </if>
+            <if test="hStatus != null">
+                h_status,
+            </if>
+            <if test="hMoney != null">
+                h_money,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="hId != null">
+                #{hId,jdbcType=INTEGER},
+            </if>
+            <if test="hAddress != null">
+                #{hAddress,jdbcType=VARCHAR},
+            </if>
+            <if test="hPhone != null">
+                #{hPhone,jdbcType=VARCHAR},
+            </if>
+            <if test="hPeople != null">
+                #{hPeople,jdbcType=VARCHAR},
+            </if>
+            <if test="hContent != null">
+                #{hContent,jdbcType=VARCHAR},
+            </if>
+            <if test="hTime != null">
+                #{hTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="hImg != null">
+                #{hImg,jdbcType=VARCHAR},
+            </if>
+            <if test="hStatus != null">
+                #{hStatus,jdbcType=INTEGER},
+            </if>
+            <if test="hMoney != null">
+                #{hMoney,jdbcType=VARCHAR},
+            </if>
+        </trim>
+    </insert>
+    <insert id="houstInsert">
+       insert into second_hand_house (h_address, h_phone,
+      h_people, h_content, h_time,
+      h_img,  h_money
+      )
+    values (#{hAddress,jdbcType=VARCHAR}, #{hPhone,jdbcType=VARCHAR},
+      #{hPeople,jdbcType=VARCHAR}, #{hContent,jdbcType=VARCHAR}, #{hTime,jdbcType=TIMESTAMP},
+      #{hImg,jdbcType=VARCHAR},  #{hMoney,jdbcType=VARCHAR}
+      )
+    </insert>
+    <select id="houseDetail" resultMap="houseVO">
+    select h_id, h_address, h_phone,
+      h_people, h_content, h_time,
+      h_img, h_status, h_money
+    from second_hand_house
+    where h_id=#{hId}
+  </select>
+    <select id="houseList" resultMap="BaseResultMap">
+      select h_id, h_address, h_phone,
+      h_people, h_content, h_time,
+      h_img, h_status, h_money
+    from second_hand_house
+  </select>
+</mapper>
