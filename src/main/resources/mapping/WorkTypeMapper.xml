@@ -28,4 +28,7 @@
       </if>
     </trim>
   </insert>
+    <select id="workTypeList" resultMap="BaseResultMap">
+      select * from work_type
+    </select>
 </mapper>

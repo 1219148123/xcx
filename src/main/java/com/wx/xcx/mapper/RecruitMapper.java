@@ -17,5 +17,5 @@ public interface RecruitMapper {
     RecruitVO recruitDetail(Recruit recruit);
 
     //查询招聘和类型
-    List<RecruitVO> recruitList();
+    List<RecruitVO> recruitList(Integer workId);
 }

@@ -28,4 +28,7 @@
       </if>
     </trim>
   </insert>
+  <select id="carTypeList" resultMap="BaseResultMap">
+    select * from car_type
+  </select>
 </mapper>

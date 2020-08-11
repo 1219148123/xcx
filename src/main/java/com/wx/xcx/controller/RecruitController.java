@@ -26,8 +26,13 @@ public class RecruitController {
     }
 
     @GetMapping("list")
-    public List<RecruitVO> recruitList() {
-        List<RecruitVO> list = recruitService.recruitList();
+    public List<RecruitVO> recruitList(String workId) {
+        if (workId == null || "".equals(workId)) {
+            Integer workIdInt = 0;
+            return recruitService.recruitList(workIdInt);
+        }
+        Integer workIdInt = Integer.valueOf(workId);
+        List<RecruitVO> list = recruitService.recruitList(workIdInt);
         return list;
     }
 }

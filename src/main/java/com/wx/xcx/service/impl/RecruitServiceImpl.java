@@ -33,7 +33,7 @@ public class RecruitServiceImpl implements RecruitService {
     }
 
     @Override
-    public List<RecruitVO> recruitList() {
-        return recruitMapper.recruitList();
+    public List<RecruitVO> recruitList(Integer workIdInt) {
+        return recruitMapper.recruitList(workIdInt);
     }
 }

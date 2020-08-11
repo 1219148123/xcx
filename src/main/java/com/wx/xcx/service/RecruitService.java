@@ -1,7 +1,6 @@
 package com.wx.xcx.service;
 
 import com.wx.xcx.dto.RecruitDTO;
-import com.wx.xcx.entity.Recruit;
 import com.wx.xcx.vo.RecruitVO;
 
 import java.util.List;
@@ -14,5 +13,5 @@ public interface RecruitService {
     RecruitVO recruitDetail(RecruitDTO recruitDTO);
 
     //查询招聘和类型
-    List<RecruitVO> recruitList();
+    List<RecruitVO> recruitList(Integer workIdInt);
 }

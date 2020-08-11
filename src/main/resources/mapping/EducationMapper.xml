@@ -28,4 +28,7 @@
       </if>
     </trim>
   </insert>
+  <select id="eduTypeList" resultMap="BaseResultMap">
+    select * from education
+  </select>
 </mapper>

@@ -1,839 +1,397 @@
-2020-07-19 13:14:29.194  INFO 20504 --- [main] com.wx.xcx.XcxApplication                : Starting XcxApplication on DESKTOP-8NN5IVC with PID 20504 (C:\Users\48738\Desktop\xcx\target\classes started by 48738 in C:\Users\48738\Desktop\xcx)
-2020-07-19 13:14:29.210  INFO 20504 --- [main] com.wx.xcx.XcxApplication                : No active profile set, falling back to default profiles: default
-2020-07-19 13:14:31.008 ERROR 20504 --- [main] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.2.8] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
-2020-07-19 13:14:31.149 ERROR 20504 --- [main] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.2.8] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
-2020-07-19 13:14:31.227  INFO 20504 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9797 (http)
-2020-07-19 13:14:31.242 ERROR 20504 --- [main] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.2.8] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
-2020-07-19 13:14:31.242  INFO 20504 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-07-19 13:14:31.242  INFO 20504 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
-2020-07-19 13:14:31.340  INFO 20504 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-07-19 13:14:31.340  INFO 20504 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2004 ms
-2020-07-19 13:14:32.858  INFO 20504 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-07-19 13:14:32.936  INFO 20504 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-07-19 13:14:33.139  INFO 20504 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9797 (http) with context path ''
-2020-07-19 13:14:33.139  INFO 20504 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-07-19 13:14:33.155  INFO 20504 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-07-19 13:14:33.186  INFO 20504 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-07-19 13:14:33.383  INFO 20504 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: testUsingPOST_1
-2020-07-19 13:14:33.412  INFO 20504 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: testUsingPOST_2
-2020-07-19 13:14:33.437  INFO 20504 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: testUsingPOST_3
-2020-07-19 13:14:33.462  INFO 20504 --- [main] com.wx.xcx.XcxApplication                : Started XcxApplication in 5.095 seconds (JVM running for 6.547)
-2020-07-19 13:14:33.465  INFO 20504 --- [main] com.wx.xcx.XcxApplication                : 项目加载完毕
-2020-07-19 13:14:51.479  INFO 20504 --- [http-nio-9797-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-07-19 13:14:51.479  INFO 20504 --- [http-nio-9797-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2020-07-19 13:14:51.491  INFO 20504 --- [http-nio-9797-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
-2020-07-19 13:14:51.541  INFO 20504 --- [http-nio-9797-exec-1] com.zaxxer.hikari.HikariDataSource       : DateSourceHikariCP - Starting...
-2020-07-19 13:14:51.689  INFO 20504 --- [http-nio-9797-exec-1] com.zaxxer.hikari.HikariDataSource       : DateSourceHikariCP - Start completed.
-2020-07-19 13:14:51.698 DEBUG 20504 --- [http-nio-9797-exec-1] com.wx.xcx.mapper.JobMapper.getAllQz     : ==>  Preparing: select * from job 
-2020-07-19 13:14:51.733 DEBUG 20504 --- [http-nio-9797-exec-1] com.wx.xcx.mapper.JobMapper.getAllQz     : ==> Parameters: 
-2020-07-19 13:14:51.768 DEBUG 20504 --- [http-nio-9797-exec-1] com.wx.xcx.mapper.JobMapper.getAllQz     : <==      Total: 9
-2020-07-19 13:15:42.850 DEBUG 20504 --- [http-nio-9797-exec-2] com.wx.xcx.mapper.JobMapper.getAllQz     : ==>  Preparing: select * from job 
-2020-07-19 13:15:42.850 DEBUG 20504 --- [http-nio-9797-exec-2] com.wx.xcx.mapper.JobMapper.getAllQz     : ==> Parameters: 
-2020-07-19 13:15:42.857 DEBUG 20504 --- [http-nio-9797-exec-2] com.wx.xcx.mapper.JobMapper.getAllQz     : <==      Total: 9
-2020-07-19 13:20:32.280  INFO 10548 --- [main] com.wx.xcx.XcxApplication                : Starting XcxApplication on DESKTOP-8NN5IVC with PID 10548 (C:\Users\48738\Desktop\xcx\target\classes started by 48738 in C:\Users\48738\Desktop\xcx)
-2020-07-19 13:20:32.280  INFO 10548 --- [main] com.wx.xcx.XcxApplication                : No active profile set, falling back to default profiles: default
-2020-07-19 13:20:33.850 ERROR 10548 --- [main] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.2.8] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
-2020-07-19 13:20:33.991 ERROR 10548 --- [main] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.2.8] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
-2020-07-19 13:20:34.069  INFO 10548 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9797 (http)
-2020-07-19 13:20:34.085 ERROR 10548 --- [main] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.2.8] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
-2020-07-19 13:20:34.085  INFO 10548 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-07-19 13:20:34.085  INFO 10548 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
-2020-07-19 13:20:34.194  INFO 10548 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-07-19 13:20:34.194  INFO 10548 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1773 ms
-2020-07-19 13:20:35.746  INFO 10548 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-07-19 13:20:35.840  INFO 10548 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-07-19 13:20:36.027  INFO 10548 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9797 (http) with context path ''
-2020-07-19 13:20:36.027  INFO 10548 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-07-19 13:20:36.043  INFO 10548 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-07-19 13:20:36.074  INFO 10548 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-07-19 13:20:36.246  INFO 10548 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: testUsingPOST_1
-2020-07-19 13:20:36.277  INFO 10548 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: testUsingPOST_2
-2020-07-19 13:20:36.308  INFO 10548 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: testUsingPOST_3
-2020-07-19 13:20:36.334  INFO 10548 --- [main] com.wx.xcx.XcxApplication                : Started XcxApplication in 4.801 seconds (JVM running for 6.071)
-2020-07-19 13:20:36.338  INFO 10548 --- [main] com.wx.xcx.XcxApplication                : 项目加载完毕
-2020-07-19 13:20:50.498  INFO 10548 --- [http-nio-9797-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-07-19 13:20:50.499  INFO 10548 --- [http-nio-9797-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2020-07-19 13:20:50.510  INFO 10548 --- [http-nio-9797-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
-2020-07-19 13:20:50.560  INFO 10548 --- [http-nio-9797-exec-1] com.zaxxer.hikari.HikariDataSource       : DateSourceHikariCP - Starting...
-2020-07-19 13:20:51.586  INFO 10548 --- [http-nio-9797-exec-1] com.zaxxer.hikari.HikariDataSource       : DateSourceHikariCP - Start completed.
-2020-07-19 13:20:51.594 DEBUG 10548 --- [http-nio-9797-exec-1] com.wx.xcx.mapper.JobMapper.getAllQz     : ==>  Preparing: select * from job 
-2020-07-19 13:20:51.622 DEBUG 10548 --- [http-nio-9797-exec-1] com.wx.xcx.mapper.JobMapper.getAllQz     : ==> Parameters: 
-2020-07-19 13:20:51.730 DEBUG 10548 --- [http-nio-9797-exec-1] com.wx.xcx.mapper.JobMapper.getAllQz     : <==      Total: 9
-2020-07-19 13:21:29.766 DEBUG 10548 --- [http-nio-9797-exec-3] com.wx.xcx.mapper.JobMapper.insert       : ==>  Preparing: insert into job ( q_title, q_type, q_content, q_time,q_money) values (?, ?, ?,?,?) 
-2020-07-19 13:21:29.768 DEBUG 10548 --- [http-nio-9797-exec-3] com.wx.xcx.mapper.JobMapper.insert       : ==> Parameters: string(String), 0(Integer), string(String), 2020-07-19 13:21:29.762(Timestamp), 0.0(Double)
-2020-07-19 13:21:30.135 DEBUG 10548 --- [http-nio-9797-exec-3] com.wx.xcx.mapper.JobMapper.insert       : <==    Updates: 1
-2020-07-19 13:21:30.139 DEBUG 10548 --- [http-nio-9797-exec-3] com.wx.xcx.mapper.JobMapper.updateImg    : ==>  Preparing: update job set q_img=? where q_id=? 
-2020-07-19 13:21:30.139 DEBUG 10548 --- [http-nio-9797-exec-3] com.wx.xcx.mapper.JobMapper.updateImg    : ==> Parameters: https://hzsfile.oss-cn-beijing.aliyuncs.com/images/2020/07/19/15951360855981675.png(String), 11(Integer)
-2020-07-19 13:21:30.237 DEBUG 10548 --- [http-nio-9797-exec-3] com.wx.xcx.mapper.JobMapper.updateImg    : <==    Updates: 1
-2020-08-01 16:38:08.594  INFO 24848 --- [main] com.wx.xcx.XcxApplication                : Starting XcxApplication on DESKTOP-8NN5IVC with PID 24848 (C:\Users\48738\Desktop\xcx\target\classes started by 48738 in C:\Users\48738\Desktop\xcx)
-2020-08-01 16:38:08.596  INFO 24848 --- [main] com.wx.xcx.XcxApplication                : No active profile set, falling back to default profiles: default
-2020-08-01 16:38:10.373 ERROR 24848 --- [main] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.2.8] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
-2020-08-01 16:38:10.548 ERROR 24848 --- [main] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.2.8] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
-2020-08-01 16:38:10.679  INFO 24848 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9797 (http)
-2020-08-01 16:38:10.690 ERROR 24848 --- [main] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.2.8] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
-2020-08-01 16:38:10.691  INFO 24848 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-08-01 16:38:10.692  INFO 24848 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
-2020-08-01 16:38:10.795  INFO 24848 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-08-01 16:38:10.795  INFO 24848 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2098 ms
-2020-08-01 16:38:12.562  INFO 24848 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-08-01 16:38:12.652  INFO 24848 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-08-01 16:38:12.879  INFO 24848 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9797 (http) with context path ''
-2020-08-01 16:38:12.881  INFO 24848 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-08-01 16:38:12.902  INFO 24848 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-08-01 16:38:12.949  INFO 24848 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-08-01 16:38:13.212  INFO 24848 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: testUsingPOST_1
-2020-08-01 16:38:13.242  INFO 24848 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: testUsingPOST_2
-2020-08-01 16:38:13.273  INFO 24848 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: testUsingPOST_3
-2020-08-01 16:38:13.312  INFO 24848 --- [main] com.wx.xcx.XcxApplication                : Started XcxApplication in 5.693 seconds (JVM running for 7.484)
-2020-08-01 16:38:13.316  INFO 24848 --- [main] com.wx.xcx.XcxApplication                : 项目加载完毕
-2020-08-01 16:38:20.756  INFO 24848 --- [http-nio-9797-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-08-01 16:38:20.757  INFO 24848 --- [http-nio-9797-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2020-08-01 16:38:20.771  INFO 24848 --- [http-nio-9797-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
-2020-08-01 16:38:39.349  WARN 24848 --- [http-nio-9797-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.wx.xcx.vo.RecruitVO com.wx.xcx.controller.RecruitController.getRecruit(com.wx.xcx.dto.RecruitDTO)]
-2020-08-01 16:41:46.239  WARN 24848 --- [http-nio-9797-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.wx.xcx.vo.RecruitVO com.wx.xcx.controller.RecruitController.getRecruit(com.wx.xcx.dto.RecruitDTO)]
-2020-08-01 16:43:03.904  INFO 12868 --- [main] com.wx.xcx.XcxApplication                : Starting XcxApplication on DESKTOP-8NN5IVC with PID 12868 (C:\Users\48738\Desktop\xcx\target\classes started by 48738 in C:\Users\48738\Desktop\xcx)
-2020-08-01 16:43:03.907  INFO 12868 --- [main] com.wx.xcx.XcxApplication                : No active profile set, falling back to default profiles: default
-2020-08-01 16:43:05.758 ERROR 12868 --- [main] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.2.8] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
-2020-08-01 16:43:05.913 ERROR 12868 --- [main] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.2.8] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
-2020-08-01 16:43:06.002  INFO 12868 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9797 (http)
-2020-08-01 16:43:06.013 ERROR 12868 --- [main] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.2.8] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
-2020-08-01 16:43:06.014  INFO 12868 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-08-01 16:43:06.015  INFO 12868 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
-2020-08-01 16:43:06.125  INFO 12868 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-08-01 16:43:06.125  INFO 12868 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2081 ms
-2020-08-01 16:43:07.696  INFO 12868 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-08-01 16:43:07.784  INFO 12868 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-08-01 16:43:07.987  INFO 12868 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9797 (http) with context path ''
-2020-08-01 16:43:07.989  INFO 12868 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-08-01 16:43:08.007  INFO 12868 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-08-01 16:43:08.053  INFO 12868 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-08-01 16:43:08.287  INFO 12868 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: testUsingPOST_1
-2020-08-01 16:43:08.315  INFO 12868 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: testUsingPOST_2
-2020-08-01 16:43:08.339  INFO 12868 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: testUsingPOST_3
-2020-08-01 16:43:08.365  INFO 12868 --- [main] com.wx.xcx.XcxApplication                : Started XcxApplication in 5.748 seconds (JVM running for 7.399)
-2020-08-01 16:43:08.369  INFO 12868 --- [main] com.wx.xcx.XcxApplication                : 项目加载完毕
-2020-08-01 16:43:52.308  INFO 12868 --- [http-nio-9797-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-08-01 16:43:52.309  INFO 12868 --- [http-nio-9797-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2020-08-01 16:43:52.322  INFO 12868 --- [http-nio-9797-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
-2020-08-01 16:44:01.991  INFO 12868 --- [http-nio-9797-exec-8] com.zaxxer.hikari.HikariDataSource       : DateSourceHikariCP - Starting...
-2020-08-01 16:44:03.046  INFO 12868 --- [http-nio-9797-exec-8] com.zaxxer.hikari.HikariDataSource       : DateSourceHikariCP - Start completed.
-2020-08-01 16:44:03.055 DEBUG 12868 --- [http-nio-9797-exec-8] c.w.x.m.RecruitMapper.recruitDetail      : ==>  Preparing: select r.z_id,r.z_work_content,r.z_type,r.z_work_requirement,r.z_time,r.z_work_phone,r.z_status,r.z_work_salary,r.z_work_email, r.z_work_address,r.z_work_period,w.work_type_id,w.work_type_value from recruit r,work_type w where r.z_type=w.work_type_id and r.z_id=? 
-2020-08-01 16:44:03.092 DEBUG 12868 --- [http-nio-9797-exec-8] c.w.x.m.RecruitMapper.recruitDetail      : ==> Parameters: 2(Integer)
-2020-08-01 16:44:03.248 ERROR 12868 --- [http-nio-9797-exec-8] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.jdbc.BadSqlGrammarException: 
-### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: Table 'xcx.recruit' doesn't exist
-### The error may exist in file [C:\Users\48738\Desktop\xcx\target\classes\mapping\RecruitMapper.xml]
-### The error may involve defaultParameterMap
-### The error occurred while setting parameters
-### SQL: select r.z_id,r.z_work_content,r.z_type,r.z_work_requirement,r.z_time,r.z_work_phone,r.z_status,r.z_work_salary,r.z_work_email,       r.z_work_address,r.z_work_period,w.work_type_id,w.work_type_value     from recruit r,work_type w     where r.z_type=w.work_type_id     and r.z_id=?
-### Cause: java.sql.SQLSyntaxErrorException: Table 'xcx.recruit' doesn't exist
-; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: Table 'xcx.recruit' doesn't exist] with root cause
+2020-08-11 17:36:36.167  INFO 16960 --- [main] com.wx.xcx.XcxApplication                : Starting XcxApplication on DESKTOP-8NN5IVC with PID 16960 (C:\Users\48738\Desktop\xcx\target\classes started by 48738 in C:\Users\48738\Desktop\xcx)
+2020-08-11 17:36:36.184  INFO 16960 --- [main] com.wx.xcx.XcxApplication                : No active profile set, falling back to default profiles: default
+2020-08-11 17:36:42.411 ERROR 16960 --- [main] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.2.8] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2020-08-11 17:36:42.832 ERROR 16960 --- [main] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.2.8] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2020-08-11 17:36:42.952  INFO 16960 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9797 (http)
+2020-08-11 17:36:42.967 ERROR 16960 --- [main] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.2.8] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2020-08-11 17:36:42.968  INFO 16960 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-11 17:36:42.969  INFO 16960 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-08-11 17:36:43.133  INFO 16960 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-11 17:36:43.133  INFO 16960 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 6830 ms
+2020-08-11 17:36:45.479  INFO 16960 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-08-11 17:36:45.647  INFO 16960 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-11 17:36:45.871  INFO 16960 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9797 (http) with context path ''
+2020-08-11 17:36:45.873  INFO 16960 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-08-11 17:36:45.901  INFO 16960 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-08-11 17:36:45.951  INFO 16960 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-08-11 17:36:46.310  INFO 16960 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: testUsingPOST_1
+2020-08-11 17:36:46.380  INFO 16960 --- [main] com.wx.xcx.XcxApplication                : Started XcxApplication in 11.189 seconds (JVM running for 13.549)
+2020-08-11 17:36:46.384  INFO 16960 --- [main] com.wx.xcx.XcxApplication                : 项目加载完毕
+2020-08-11 17:37:42.161  INFO 16960 --- [http-nio-9797-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-11 17:37:42.162  INFO 16960 --- [http-nio-9797-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-08-11 17:37:42.172  INFO 16960 --- [http-nio-9797-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2020-08-11 17:37:47.711  INFO 16960 --- [http-nio-9797-exec-9] com.zaxxer.hikari.HikariDataSource       : DateSourceHikariCP - Starting...
+2020-08-11 17:37:48.004  INFO 16960 --- [http-nio-9797-exec-9] com.zaxxer.hikari.HikariDataSource       : DateSourceHikariCP - Start completed.
+2020-08-11 17:37:48.012 DEBUG 16960 --- [http-nio-9797-exec-9] c.w.x.mapper.CarTypeMapper.carTypeList   : ==>  Preparing: select * from car_type 
+2020-08-11 17:37:48.046 DEBUG 16960 --- [http-nio-9797-exec-9] c.w.x.mapper.CarTypeMapper.carTypeList   : ==> Parameters: 
+2020-08-11 17:37:48.144 DEBUG 16960 --- [http-nio-9797-exec-9] c.w.x.mapper.CarTypeMapper.carTypeList   : <==      Total: 6
+2020-08-11 17:37:53.264 DEBUG 16960 --- [http-nio-9797-exec-10] c.w.x.m.EducationMapper.eduTypeList      : ==>  Preparing: select * from education 
+2020-08-11 17:37:53.265 DEBUG 16960 --- [http-nio-9797-exec-10] c.w.x.m.EducationMapper.eduTypeList      : ==> Parameters: 
+2020-08-11 17:37:53.269 DEBUG 16960 --- [http-nio-9797-exec-10] c.w.x.m.EducationMapper.eduTypeList      : <==      Total: 5
+2020-08-11 17:37:59.087 DEBUG 16960 --- [http-nio-9797-exec-2] c.w.x.m.WorkTypeMapper.workTypeList      : ==>  Preparing: select * from work_type 
+2020-08-11 17:37:59.087 DEBUG 16960 --- [http-nio-9797-exec-2] c.w.x.m.WorkTypeMapper.workTypeList      : ==> Parameters: 
+2020-08-11 17:37:59.093 DEBUG 16960 --- [http-nio-9797-exec-2] c.w.x.m.WorkTypeMapper.workTypeList      : <==      Total: 6
+2020-08-11 17:39:05.904  INFO 22048 --- [main] com.wx.xcx.XcxApplication                : Starting XcxApplication on DESKTOP-8NN5IVC with PID 22048 (C:\Users\48738\Desktop\xcx\target\classes started by 48738 in C:\Users\48738\Desktop\xcx)
+2020-08-11 17:39:05.907  INFO 22048 --- [main] com.wx.xcx.XcxApplication                : No active profile set, falling back to default profiles: default
+2020-08-11 17:39:07.732 ERROR 22048 --- [main] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.2.8] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2020-08-11 17:39:07.871 ERROR 22048 --- [main] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.2.8] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2020-08-11 17:39:07.963  INFO 22048 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9797 (http)
+2020-08-11 17:39:07.978 ERROR 22048 --- [main] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.2.8] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2020-08-11 17:39:07.980  INFO 22048 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-11 17:39:07.980  INFO 22048 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-08-11 17:39:08.083  INFO 22048 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-11 17:39:08.083  INFO 22048 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2046 ms
+2020-08-11 17:39:09.823  INFO 22048 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-08-11 17:39:09.907  INFO 22048 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-11 17:39:10.110  INFO 22048 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9797 (http) with context path ''
+2020-08-11 17:39:10.111  INFO 22048 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-08-11 17:39:10.128  INFO 22048 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-08-11 17:39:10.171  INFO 22048 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-08-11 17:39:10.392  INFO 22048 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: testUsingPOST_1
+2020-08-11 17:39:10.428  INFO 22048 --- [main] com.wx.xcx.XcxApplication                : Started XcxApplication in 5.333 seconds (JVM running for 7.228)
+2020-08-11 17:39:10.431  INFO 22048 --- [main] com.wx.xcx.XcxApplication                : 项目加载完毕
+2020-08-11 17:39:22.205  INFO 22048 --- [http-nio-9797-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-11 17:39:22.206  INFO 22048 --- [http-nio-9797-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-08-11 17:39:22.218  INFO 22048 --- [http-nio-9797-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2020-08-11 17:39:22.268  INFO 22048 --- [http-nio-9797-exec-1] com.zaxxer.hikari.HikariDataSource       : DateSourceHikariCP - Starting...
+2020-08-11 17:39:22.434  INFO 22048 --- [http-nio-9797-exec-1] com.zaxxer.hikari.HikariDataSource       : DateSourceHikariCP - Start completed.
+2020-08-11 17:39:22.442 DEBUG 22048 --- [http-nio-9797-exec-1] c.w.x.m.WorkTypeMapper.workTypeList      : ==>  Preparing: select * from work_type 
+2020-08-11 17:39:22.474 DEBUG 22048 --- [http-nio-9797-exec-1] c.w.x.m.WorkTypeMapper.workTypeList      : ==> Parameters: 
+2020-08-11 17:39:22.506 DEBUG 22048 --- [http-nio-9797-exec-1] c.w.x.m.WorkTypeMapper.workTypeList      : <==      Total: 6
+2020-08-11 17:39:29.090 DEBUG 22048 --- [http-nio-9797-exec-2] c.w.x.m.EducationMapper.eduTypeList      : ==>  Preparing: select * from education 
+2020-08-11 17:39:29.090 DEBUG 22048 --- [http-nio-9797-exec-2] c.w.x.m.EducationMapper.eduTypeList      : ==> Parameters: 
+2020-08-11 17:39:29.093 DEBUG 22048 --- [http-nio-9797-exec-2] c.w.x.m.EducationMapper.eduTypeList      : <==      Total: 5
+2020-08-11 17:39:34.881 DEBUG 22048 --- [http-nio-9797-exec-4] c.w.x.mapper.CarTypeMapper.carTypeList   : ==>  Preparing: select * from car_type 
+2020-08-11 17:39:34.881 DEBUG 22048 --- [http-nio-9797-exec-4] c.w.x.mapper.CarTypeMapper.carTypeList   : ==> Parameters: 
+2020-08-11 17:39:34.885 DEBUG 22048 --- [http-nio-9797-exec-4] c.w.x.mapper.CarTypeMapper.carTypeList   : <==      Total: 6
+2020-08-11 17:41:01.600 DEBUG 22048 --- [http-nio-9797-exec-6] c.w.x.mapper.RecruitMapper.recruitList   : ==>  Preparing: select r.z_id,r.z_work_content,r.z_type,r.z_work_requirement,r.z_time,r.z_work_phone,r.z_status,r.z_work_salary,r.z_work_email, r.z_work_address,r.z_work_period,w.work_type_id,w.work_type_value from recruit r left join work_type w on r.z_type=w.work_type_id 
+2020-08-11 17:41:01.601 DEBUG 22048 --- [http-nio-9797-exec-6] c.w.x.mapper.RecruitMapper.recruitList   : ==> Parameters: 
+2020-08-11 17:41:01.627 DEBUG 22048 --- [http-nio-9797-exec-6] c.w.x.mapper.RecruitMapper.recruitList   : <==      Total: 4
+2020-08-11 17:42:26.634 DEBUG 22048 --- [http-nio-9797-exec-8] c.w.x.m.RecruitMapper.recruitDetail      : ==>  Preparing: select r.z_id,r.z_work_content,r.z_type,r.z_work_requirement,r.z_time,r.z_work_phone,r.z_status,r.z_work_salary,r.z_work_email, r.z_work_address,r.z_work_period,w.work_type_id,w.work_type_value from recruit r,work_type w where r.z_type=w.work_type_id and r.z_id=? 
+2020-08-11 17:42:26.635 DEBUG 22048 --- [http-nio-9797-exec-8] c.w.x.m.RecruitMapper.recruitDetail      : ==> Parameters: 9(Integer)
+2020-08-11 17:42:26.639 DEBUG 22048 --- [http-nio-9797-exec-8] c.w.x.m.RecruitMapper.recruitDetail      : <==      Total: 0
+2020-08-11 17:59:29.097  INFO 18112 --- [main] com.wx.xcx.XcxApplication                : Starting XcxApplication on DESKTOP-8NN5IVC with PID 18112 (C:\Users\48738\Desktop\xcx\target\classes started by 48738 in C:\Users\48738\Desktop\xcx)
+2020-08-11 17:59:29.099  INFO 18112 --- [main] com.wx.xcx.XcxApplication                : No active profile set, falling back to default profiles: default
+2020-08-11 17:59:31.029 ERROR 18112 --- [main] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.2.8] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2020-08-11 17:59:31.182 ERROR 18112 --- [main] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.2.8] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2020-08-11 17:59:31.271  INFO 18112 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9797 (http)
+2020-08-11 17:59:31.281 ERROR 18112 --- [main] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.2.8] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2020-08-11 17:59:31.282  INFO 18112 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-11 17:59:31.283  INFO 18112 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-08-11 17:59:31.394  INFO 18112 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-11 17:59:31.394  INFO 18112 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2202 ms
+2020-08-11 17:59:33.168  INFO 18112 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-08-11 17:59:33.253  INFO 18112 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-11 17:59:33.482  INFO 18112 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9797 (http) with context path ''
+2020-08-11 17:59:33.484  INFO 18112 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-08-11 17:59:33.513  INFO 18112 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-08-11 17:59:33.564  INFO 18112 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-08-11 17:59:33.816  INFO 18112 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: testUsingPOST_1
+2020-08-11 17:59:33.852  INFO 18112 --- [main] com.wx.xcx.XcxApplication                : Started XcxApplication in 6.079 seconds (JVM running for 7.99)
+2020-08-11 17:59:33.856  INFO 18112 --- [main] com.wx.xcx.XcxApplication                : 项目加载完毕
+2020-08-11 17:59:37.230  INFO 18112 --- [http-nio-9797-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-11 17:59:37.231  INFO 18112 --- [http-nio-9797-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-08-11 17:59:37.244  INFO 18112 --- [http-nio-9797-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+2020-08-11 17:59:42.482  INFO 18112 --- [http-nio-9797-exec-7] com.zaxxer.hikari.HikariDataSource       : DateSourceHikariCP - Starting...
+2020-08-11 17:59:42.640  INFO 18112 --- [http-nio-9797-exec-7] com.zaxxer.hikari.HikariDataSource       : DateSourceHikariCP - Start completed.
+2020-08-11 17:59:42.648 DEBUG 18112 --- [http-nio-9797-exec-7] c.w.x.mapper.RecruitMapper.recruitList   : ==>  Preparing: select r.z_id,r.z_work_content,r.z_type,r.z_work_requirement,r.z_time,r.z_work_phone,r.z_status,r.z_work_salary,r.z_work_email, r.z_work_address,r.z_work_period,w.work_type_id,w.work_type_value from recruit r left join work_type w on r.z_type=w.work_type_id 
+2020-08-11 17:59:42.677 DEBUG 18112 --- [http-nio-9797-exec-7] c.w.x.mapper.RecruitMapper.recruitList   : ==> Parameters: 
+2020-08-11 17:59:42.712 DEBUG 18112 --- [http-nio-9797-exec-7] c.w.x.mapper.RecruitMapper.recruitList   : <==      Total: 4
+2020-08-11 17:59:48.804 DEBUG 18112 --- [http-nio-9797-exec-9] c.w.x.mapper.RecruitMapper.recruitList   : ==>  Preparing: select r.z_id,r.z_work_content,r.z_type,r.z_work_requirement,r.z_time,r.z_work_phone,r.z_status,r.z_work_salary,r.z_work_email, r.z_work_address,r.z_work_period,w.work_type_id,w.work_type_value from recruit r left join work_type w on r.z_type=w.work_type_id and w.work_type_id=? 
+2020-08-11 17:59:48.804 DEBUG 18112 --- [http-nio-9797-exec-9] c.w.x.mapper.RecruitMapper.recruitList   : ==> Parameters: 3(Integer)
+2020-08-11 17:59:48.818 DEBUG 18112 --- [http-nio-9797-exec-9] c.w.x.mapper.RecruitMapper.recruitList   : <==      Total: 4
+2020-08-11 18:00:05.225 DEBUG 18112 --- [http-nio-9797-exec-10] c.w.x.mapper.RecruitMapper.recruitList   : ==>  Preparing: select r.z_id,r.z_work_content,r.z_type,r.z_work_requirement,r.z_time,r.z_work_phone,r.z_status,r.z_work_salary,r.z_work_email, r.z_work_address,r.z_work_period,w.work_type_id,w.work_type_value from recruit r left join work_type w on r.z_type=w.work_type_id and w.work_type_id=? 
+2020-08-11 18:00:05.226 DEBUG 18112 --- [http-nio-9797-exec-10] c.w.x.mapper.RecruitMapper.recruitList   : ==> Parameters: 2(Integer)
+2020-08-11 18:00:05.231 DEBUG 18112 --- [http-nio-9797-exec-10] c.w.x.mapper.RecruitMapper.recruitList   : <==      Total: 4
+2020-08-11 18:00:19.192 DEBUG 18112 --- [http-nio-9797-exec-1] c.w.x.mapper.RecruitMapper.recruitList   : ==>  Preparing: select r.z_id,r.z_work_content,r.z_type,r.z_work_requirement,r.z_time,r.z_work_phone,r.z_status,r.z_work_salary,r.z_work_email, r.z_work_address,r.z_work_period,w.work_type_id,w.work_type_value from recruit r left join work_type w on r.z_type=w.work_type_id and w.work_type_id=? 
+2020-08-11 18:00:19.193 DEBUG 18112 --- [http-nio-9797-exec-1] c.w.x.mapper.RecruitMapper.recruitList   : ==> Parameters: 1(Integer)
+2020-08-11 18:00:19.200 DEBUG 18112 --- [http-nio-9797-exec-1] c.w.x.mapper.RecruitMapper.recruitList   : <==      Total: 4
+2020-08-11 18:05:36.664  INFO 21740 --- [main] com.wx.xcx.XcxApplication                : Starting XcxApplication on DESKTOP-8NN5IVC with PID 21740 (C:\Users\48738\Desktop\xcx\target\classes started by 48738 in C:\Users\48738\Desktop\xcx)
+2020-08-11 18:05:36.670  INFO 21740 --- [main] com.wx.xcx.XcxApplication                : No active profile set, falling back to default profiles: default
+2020-08-11 18:05:38.416 ERROR 21740 --- [main] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.2.8] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2020-08-11 18:05:38.611 ERROR 21740 --- [main] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.2.8] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2020-08-11 18:05:38.721  INFO 21740 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9797 (http)
+2020-08-11 18:05:38.732 ERROR 21740 --- [main] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.2.8] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2020-08-11 18:05:38.732  INFO 21740 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-11 18:05:38.733  INFO 21740 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-08-11 18:05:38.856  INFO 21740 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-11 18:05:38.857  INFO 21740 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2024 ms
+2020-08-11 18:05:40.648  INFO 21740 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-08-11 18:05:40.739  INFO 21740 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-11 18:05:41.024  INFO 21740 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9797 (http) with context path ''
+2020-08-11 18:05:41.025  INFO 21740 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-08-11 18:05:41.049  INFO 21740 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-08-11 18:05:41.095  INFO 21740 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-08-11 18:05:41.375  INFO 21740 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: testUsingPOST_1
+2020-08-11 18:05:41.412  INFO 21740 --- [main] com.wx.xcx.XcxApplication                : Started XcxApplication in 5.792 seconds (JVM running for 7.38)
+2020-08-11 18:05:41.417  INFO 21740 --- [main] com.wx.xcx.XcxApplication                : 项目加载完毕
+2020-08-11 18:05:53.718  INFO 21740 --- [http-nio-9797-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-11 18:05:53.719  INFO 21740 --- [http-nio-9797-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-08-11 18:05:53.731  INFO 21740 --- [http-nio-9797-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2020-08-11 18:05:53.808  INFO 21740 --- [http-nio-9797-exec-1] com.zaxxer.hikari.HikariDataSource       : DateSourceHikariCP - Starting...
+2020-08-11 18:05:53.996  INFO 21740 --- [http-nio-9797-exec-1] com.zaxxer.hikari.HikariDataSource       : DateSourceHikariCP - Start completed.
+2020-08-11 18:05:54.008 DEBUG 21740 --- [http-nio-9797-exec-1] c.w.x.mapper.RecruitMapper.recruitList   : ==>  Preparing: select r.z_id,r.z_work_content,r.z_type,r.z_work_requirement,r.z_time,r.z_work_phone,r.z_status,r.z_work_salary,r.z_work_email, r.z_work_address,r.z_work_period,w.work_type_id,w.work_type_value from recruit r left join work_type w on r.z_type=w.work_type_id and w.work_type_id=? and w.work_type_id != null 
+2020-08-11 18:05:54.044 DEBUG 21740 --- [http-nio-9797-exec-1] c.w.x.mapper.RecruitMapper.recruitList   : ==> Parameters: 1(Integer)
+2020-08-11 18:05:54.085 DEBUG 21740 --- [http-nio-9797-exec-1] c.w.x.mapper.RecruitMapper.recruitList   : <==      Total: 4
+2020-08-11 18:06:08.782 DEBUG 21740 --- [http-nio-9797-exec-2] c.w.x.mapper.RecruitMapper.recruitList   : ==>  Preparing: select r.z_id,r.z_work_content,r.z_type,r.z_work_requirement,r.z_time,r.z_work_phone,r.z_status,r.z_work_salary,r.z_work_email, r.z_work_address,r.z_work_period,w.work_type_id,w.work_type_value from recruit r left join work_type w on r.z_type=w.work_type_id and w.work_type_id=? and w.work_type_id != null 
+2020-08-11 18:06:08.782 DEBUG 21740 --- [http-nio-9797-exec-2] c.w.x.mapper.RecruitMapper.recruitList   : ==> Parameters: 2(Integer)
+2020-08-11 18:06:08.787 DEBUG 21740 --- [http-nio-9797-exec-2] c.w.x.mapper.RecruitMapper.recruitList   : <==      Total: 4
+2020-08-11 18:07:04.340  INFO 15616 --- [main] com.wx.xcx.XcxApplication                : Starting XcxApplication on DESKTOP-8NN5IVC with PID 15616 (C:\Users\48738\Desktop\xcx\target\classes started by 48738 in C:\Users\48738\Desktop\xcx)
+2020-08-11 18:07:04.342  INFO 15616 --- [main] com.wx.xcx.XcxApplication                : No active profile set, falling back to default profiles: default
+2020-08-11 18:07:06.088 ERROR 15616 --- [main] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.2.8] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2020-08-11 18:07:06.231 ERROR 15616 --- [main] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.2.8] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2020-08-11 18:07:06.316  INFO 15616 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9797 (http)
+2020-08-11 18:07:06.325 ERROR 15616 --- [main] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.2.8] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2020-08-11 18:07:06.326  INFO 15616 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-11 18:07:06.327  INFO 15616 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-08-11 18:07:06.430  INFO 15616 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-11 18:07:06.431  INFO 15616 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1937 ms
+2020-08-11 18:07:07.611  WARN 15616 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'findJobController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'findJobServiceImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'findJobMapper' defined in file [C:\Users\48738\Desktop\xcx\target\classes\com\wx\xcx\mapper\FindJobMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [C:\Users\48738\Desktop\xcx\target\classes\mapping\RecruitMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 142; columnNumber: 33; 元素内容必须由格式正确的字符数据或标记组成。
+2020-08-11 18:07:07.616  INFO 15616 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-08-11 18:07:07.627  INFO 15616 --- [main] ConditionEvaluationReportLoggingListener : 
 
-java.sql.SQLSyntaxErrorException: Table 'xcx.recruit' doesn't exist
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.20.jar:8.0.20]
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.20.jar:8.0.20]
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.20.jar:8.0.20]
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953) ~[mysql-connector-java-8.0.20.jar:8.0.20]
-	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370) ~[mysql-connector-java-8.0.20.jar:8.0.20]
-	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44) ~[HikariCP-3.4.5.jar:na]
-	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java) ~[HikariCP-3.4.5.jar:na]
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-08-11 18:07:07.643 ERROR 15616 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'findJobController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'findJobServiceImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'findJobMapper' defined in file [C:\Users\48738\Desktop\xcx\target\classes\com\wx\xcx\mapper\FindJobMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [C:\Users\48738\Desktop\xcx\target\classes\mapping\RecruitMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 142; columnNumber: 33; 元素内容必须由格式正确的字符数据或标记组成。
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:321) ~[spring-context-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1422) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:895) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878) ~[spring-context-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550) ~[spring-context-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143) ~[spring-boot-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758) [spring-boot-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750) [spring-boot-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) [spring-boot-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237) [spring-boot-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) [spring-boot-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at com.wx.xcx.XcxApplication.main(XcxApplication.java:18) [classes/:na]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'findJobServiceImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'findJobMapper' defined in file [C:\Users\48738\Desktop\xcx\target\classes\com\wx\xcx\mapper\FindJobMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [C:\Users\48738\Desktop\xcx\target\classes\mapping\RecruitMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 142; columnNumber: 33; 元素内容必须由格式正确的字符数据或标记组成。
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:321) ~[spring-context-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1422) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1306) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1226) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:521) ~[spring-context-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:497) ~[spring-context-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:650) ~[spring-context-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:239) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:130) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:318) ~[spring-context-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	... 18 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'findJobMapper' defined in file [C:\Users\48738\Desktop\xcx\target\classes\com\wx\xcx\mapper\FindJobMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [C:\Users\48738\Desktop\xcx\target\classes\mapping\RecruitMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 142; columnNumber: 33; 元素内容必须由格式正确的字符数据或标记组成。
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1526) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1406) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeanByName(AbstractAutowireCapableBeanFactory.java:454) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:527) ~[spring-context-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:497) ~[spring-context-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:650) ~[spring-context-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:239) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:130) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:318) ~[spring-context-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	... 34 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [C:\Users\48738\Desktop\xcx\target\classes\mapping\RecruitMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 142; columnNumber: 33; 元素内容必须由格式正确的字符数据或标记组成。
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:656) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:636) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1306) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1226) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1511) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	... 48 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [C:\Users\48738\Desktop\xcx\target\classes\mapping\RecruitMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 142; columnNumber: 33; 元素内容必须由格式正确的字符数据或标记组成。
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:651) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	... 61 common frames omitted
+Caused by: org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [C:\Users\48738\Desktop\xcx\target\classes\mapping\RecruitMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 142; columnNumber: 33; 元素内容必须由格式正确的字符数据或标记组成。
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:595) ~[mybatis-spring-2.0.3.jar:2.0.3]
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:475) ~[mybatis-spring-2.0.3.jar:2.0.3]
+	at org.mybatis.spring.SqlSessionFactoryBean.getObject(SqlSessionFactoryBean.java:615) ~[mybatis-spring-2.0.3.jar:2.0.3]
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration.sqlSessionFactory(MybatisAutoConfiguration.java:180) ~[mybatis-spring-boot-autoconfigure-2.1.1.jar:2.1.1]
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$3f88146b.CGLIB$sqlSessionFactory$1(<generated>) ~[mybatis-spring-boot-autoconfigure-2.1.1.jar:2.1.1]
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$3f88146b$$FastClassBySpringCGLIB$$f73e59d0.invoke(<generated>) ~[mybatis-spring-boot-autoconfigure-2.1.1.jar:2.1.1]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244) ~[spring-core-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331) ~[spring-context-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$3f88146b.sqlSessionFactory(<generated>) ~[mybatis-spring-boot-autoconfigure-2.1.1.jar:2.1.1]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_171]
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_171]
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_171]
 	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_171]
-	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59) ~[mybatis-3.5.3.jar:3.5.3]
-	at com.sun.proxy.$Proxy115.execute(Unknown Source) ~[na:na]
-	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:64) ~[mybatis-3.5.3.jar:3.5.3]
-	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79) ~[mybatis-3.5.3.jar:3.5.3]
-	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63) ~[mybatis-3.5.3.jar:3.5.3]
-	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324) ~[mybatis-3.5.3.jar:3.5.3]
-	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156) ~[mybatis-3.5.3.jar:3.5.3]
-	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109) ~[mybatis-3.5.3.jar:3.5.3]
-	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83) ~[mybatis-3.5.3.jar:3.5.3]
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147) ~[mybatis-3.5.3.jar:3.5.3]
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140) ~[mybatis-3.5.3.jar:3.5.3]
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:76) ~[mybatis-3.5.3.jar:3.5.3]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_171]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_171]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_171]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_171]
-	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426) ~[mybatis-spring-2.0.3.jar:2.0.3]
-	at com.sun.proxy.$Proxy73.selectOne(Unknown Source) ~[na:na]
-	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:159) ~[mybatis-spring-2.0.3.jar:2.0.3]
-	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:87) ~[mybatis-3.5.3.jar:3.5.3]
-	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:93) ~[mybatis-3.5.3.jar:3.5.3]
-	at com.sun.proxy.$Proxy75.recruitDetail(Unknown Source) ~[na:na]
-	at com.wx.xcx.service.impl.RecruitServiceImpl.recruitDetail(RecruitServiceImpl.java:31) ~[classes/:na]
-	at com.wx.xcx.controller.RecruitController.getRecruit(RecruitController.java:24) ~[classes/:na]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_171]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_171]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_171]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_171]
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105) ~[spring-webmvc-5.2.6.RELEASE.jar:5.2.6.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879) ~[spring-webmvc-5.2.6.RELEASE.jar:5.2.6.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793) ~[spring-webmvc-5.2.6.RELEASE.jar:5.2.6.RELEASE]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.2.6.RELEASE.jar:5.2.6.RELEASE]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) ~[spring-webmvc-5.2.6.RELEASE.jar:5.2.6.RELEASE]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.2.6.RELEASE.jar:5.2.6.RELEASE]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.2.6.RELEASE.jar:5.2.6.RELEASE]
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.2.6.RELEASE.jar:5.2.6.RELEASE]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.2.6.RELEASE.jar:5.2.6.RELEASE]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.35.jar:9.0.35]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.35.jar:9.0.35]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [tomcat-embed-core-9.0.35.jar:9.0.35]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.35.jar:9.0.35]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.35.jar:9.0.35]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.35.jar:9.0.35]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.35.jar:9.0.35]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373) [tomcat-embed-core-9.0.35.jar:9.0.35]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.35.jar:9.0.35]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-9.0.35.jar:9.0.35]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590) [tomcat-embed-core-9.0.35.jar:9.0.35]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.35.jar:9.0.35]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_171]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_171]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.35.jar:9.0.35]
-	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_171]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	... 62 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 142; columnNumber: 33; 元素内容必须由格式正确的字符数据或标记组成。
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:263) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.parsing.XPathParser.<init>(XPathParser.java:127) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.<init>(XMLMapperBuilder.java:80) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:592) ~[mybatis-spring-2.0.3.jar:2.0.3]
+	... 75 common frames omitted
+Caused by: org.xml.sax.SAXParseException: 元素内容必须由格式正确的字符数据或标记组成。
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203) ~[na:1.8.0_171]
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:177) ~[na:1.8.0_171]
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400) ~[na:1.8.0_171]
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327) ~[na:1.8.0_171]
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1472) ~[na:1.8.0_171]
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.startOfMarkup(XMLDocumentFragmentScannerImpl.java:2635) ~[na:1.8.0_171]
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2732) ~[na:1.8.0_171]
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602) ~[na:1.8.0_171]
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505) ~[na:1.8.0_171]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:842) ~[na:1.8.0_171]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:771) ~[na:1.8.0_171]
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141) ~[na:1.8.0_171]
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243) ~[na:1.8.0_171]
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339) ~[na:1.8.0_171]
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:261) ~[mybatis-3.5.3.jar:3.5.3]
+	... 78 common frames omitted
 
-2020-08-01 16:46:18.237  INFO 21716 --- [main] com.wx.xcx.XcxApplication                : Starting XcxApplication on DESKTOP-8NN5IVC with PID 21716 (C:\Users\48738\Desktop\xcx\target\classes started by 48738 in C:\Users\48738\Desktop\xcx)
-2020-08-01 16:46:18.244  INFO 21716 --- [main] com.wx.xcx.XcxApplication                : No active profile set, falling back to default profiles: default
-2020-08-01 16:46:20.225 ERROR 21716 --- [main] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.2.8] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
-2020-08-01 16:46:20.453 ERROR 21716 --- [main] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.2.8] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
-2020-08-01 16:46:20.596  INFO 21716 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9797 (http)
-2020-08-01 16:46:20.614 ERROR 21716 --- [main] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.2.8] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
-2020-08-01 16:46:20.616  INFO 21716 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-08-01 16:46:20.616  INFO 21716 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
-2020-08-01 16:46:20.802  INFO 21716 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-08-01 16:46:20.803  INFO 21716 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2433 ms
-2020-08-01 16:46:22.596  INFO 21716 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-08-01 16:46:22.679  INFO 21716 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-08-01 16:46:22.908  INFO 21716 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9797 (http) with context path ''
-2020-08-01 16:46:22.910  INFO 21716 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-08-01 16:46:22.930  INFO 21716 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-08-01 16:46:22.974  INFO 21716 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-08-01 16:46:23.239  INFO 21716 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: testUsingPOST_1
-2020-08-01 16:46:23.271  INFO 21716 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: testUsingPOST_2
-2020-08-01 16:46:23.299  INFO 21716 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: testUsingPOST_3
-2020-08-01 16:46:23.328  INFO 21716 --- [main] com.wx.xcx.XcxApplication                : Started XcxApplication in 5.981 seconds (JVM running for 7.439)
-2020-08-01 16:46:23.331  INFO 21716 --- [main] com.wx.xcx.XcxApplication                : 项目加载完毕
-2020-08-01 16:49:16.232  INFO 21716 --- [http-nio-9797-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-08-01 16:49:16.233  INFO 21716 --- [http-nio-9797-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2020-08-01 16:49:16.246  INFO 21716 --- [http-nio-9797-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
-2020-08-01 16:49:20.307  INFO 21716 --- [http-nio-9797-exec-8] com.zaxxer.hikari.HikariDataSource       : DateSourceHikariCP - Starting...
-2020-08-01 16:49:20.474  INFO 21716 --- [http-nio-9797-exec-8] com.zaxxer.hikari.HikariDataSource       : DateSourceHikariCP - Start completed.
-2020-08-01 16:49:20.484 DEBUG 21716 --- [http-nio-9797-exec-8] c.w.x.m.RecruitMapper.recruitDetail      : ==>  Preparing: select r.z_id,r.z_work_content,r.z_type,r.z_work_requirement,r.z_time,r.z_work_phone,r.z_status,r.z_work_salary,r.z_work_email, r.z_work_address,r.z_work_period,w.work_type_id,w.work_type_value from recruit r,work_type w where r.z_type=w.work_type_id and r.z_id=? 
-2020-08-01 16:49:20.521 DEBUG 21716 --- [http-nio-9797-exec-8] c.w.x.m.RecruitMapper.recruitDetail      : ==> Parameters: 2(Integer)
-2020-08-01 16:49:20.579 DEBUG 21716 --- [http-nio-9797-exec-8] c.w.x.m.RecruitMapper.recruitDetail      : <==      Total: 0
-2020-08-01 16:50:56.016 DEBUG 21716 --- [http-nio-9797-exec-1] c.w.x.m.RecruitMapper.recruitDetail      : ==>  Preparing: select r.z_id,r.z_work_content,r.z_type,r.z_work_requirement,r.z_time,r.z_work_phone,r.z_status,r.z_work_salary,r.z_work_email, r.z_work_address,r.z_work_period,w.work_type_id,w.work_type_value from recruit r,work_type w where r.z_type=w.work_type_id and r.z_id=? 
-2020-08-01 16:50:56.017 DEBUG 21716 --- [http-nio-9797-exec-1] c.w.x.m.RecruitMapper.recruitDetail      : ==> Parameters: 2(Integer)
-2020-08-01 16:50:56.023 DEBUG 21716 --- [http-nio-9797-exec-1] c.w.x.m.RecruitMapper.recruitDetail      : <==      Total: 1
-2020-08-01 16:54:24.474 DEBUG 21716 --- [http-nio-9797-exec-4] c.w.x.m.RecruitMapper.insertRecruit      : ==>  Preparing: insert into recruit (z_work_content, z_type, z_work_requirement, z_time, z_work_phone, z_status, z_work_salary, z_work_email, z_work_address, z_work_period) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
-2020-08-01 16:54:24.477 DEBUG 21716 --- [http-nio-9797-exec-4] c.w.x.m.RecruitMapper.insertRecruit      : ==> Parameters: B2区门口保安(String), 3(Integer), 每日07：00-12：00，下午13:00-18：00，认真负责，无不良习惯，军人退役待遇更好(String), 2020-08-01 16:54:24.473(Timestamp), 15034351364(String), 1(Integer), 4500/月(String), 487387645@qq.com(String), 太原市小店区万达广场(String), 1年(String)
-2020-08-01 16:54:24.481 DEBUG 21716 --- [http-nio-9797-exec-4] c.w.x.m.RecruitMapper.insertRecruit      : <==    Updates: 1
-2020-08-01 16:54:31.879 DEBUG 21716 --- [http-nio-9797-exec-3] c.w.x.mapper.RecruitMapper.recruitList   : ==>  Preparing: select r.z_id,r.z_work_content,r.z_type,r.z_work_requirement,r.z_time,r.z_work_phone,r.z_status,r.z_work_salary,r.z_work_email, r.z_work_address,r.z_work_period,w.work_type_id,w.work_type_value from recruit r,work_type w where r.z_type=w.work_type_id 
-2020-08-01 16:54:31.880 DEBUG 21716 --- [http-nio-9797-exec-3] c.w.x.mapper.RecruitMapper.recruitList   : ==> Parameters: 
-2020-08-01 16:54:31.893 DEBUG 21716 --- [http-nio-9797-exec-3] c.w.x.mapper.RecruitMapper.recruitList   : <==      Total: 4
-2020-08-01 16:54:57.036 DEBUG 21716 --- [http-nio-9797-exec-5] c.w.x.m.RecruitMapper.recruitDetail      : ==>  Preparing: select r.z_id,r.z_work_content,r.z_type,r.z_work_requirement,r.z_time,r.z_work_phone,r.z_status,r.z_work_salary,r.z_work_email, r.z_work_address,r.z_work_period,w.work_type_id,w.work_type_value from recruit r,work_type w where r.z_type=w.work_type_id and r.z_id=? 
-2020-08-01 16:54:57.038 DEBUG 21716 --- [http-nio-9797-exec-5] c.w.x.m.RecruitMapper.recruitDetail      : ==> Parameters: 5(Integer)
-2020-08-01 16:54:57.042 DEBUG 21716 --- [http-nio-9797-exec-5] c.w.x.m.RecruitMapper.recruitDetail      : <==      Total: 1
-2020-08-01 17:51:06.685  INFO 20132 --- [main] com.wx.xcx.XcxApplication                : Starting XcxApplication on DESKTOP-8NN5IVC with PID 20132 (C:\Users\48738\Desktop\xcx\target\classes started by 48738 in C:\Users\48738\Desktop\xcx)
-2020-08-01 17:51:06.687  INFO 20132 --- [main] com.wx.xcx.XcxApplication                : No active profile set, falling back to default profiles: default
-2020-08-01 17:51:08.576 ERROR 20132 --- [main] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.2.8] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
-2020-08-01 17:51:08.765 ERROR 20132 --- [main] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.2.8] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
-2020-08-01 17:51:08.921  INFO 20132 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9797 (http)
-2020-08-01 17:51:08.932 ERROR 20132 --- [main] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.2.8] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
-2020-08-01 17:51:08.933  INFO 20132 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-08-01 17:51:08.934  INFO 20132 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
-2020-08-01 17:51:09.042  INFO 20132 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-08-01 17:51:09.042  INFO 20132 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2245 ms
-2020-08-01 17:51:10.903  INFO 20132 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-08-01 17:51:10.993  INFO 20132 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-08-01 17:51:11.228  INFO 20132 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9797 (http) with context path ''
-2020-08-01 17:51:11.229  INFO 20132 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-08-01 17:51:11.253  INFO 20132 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-08-01 17:51:11.302  INFO 20132 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-08-01 17:51:11.581  INFO 20132 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: testUsingPOST_1
-2020-08-01 17:51:11.606  INFO 20132 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: testUsingPOST_2
-2020-08-01 17:51:11.629  INFO 20132 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: testUsingPOST_3
-2020-08-01 17:51:11.662  INFO 20132 --- [main] com.wx.xcx.XcxApplication                : Started XcxApplication in 5.931 seconds (JVM running for 8.203)
-2020-08-01 17:51:11.665  INFO 20132 --- [main] com.wx.xcx.XcxApplication                : 项目加载完毕
-2020-08-01 17:51:15.641  INFO 20132 --- [http-nio-9797-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-08-01 17:51:15.641  INFO 20132 --- [http-nio-9797-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2020-08-01 17:51:15.654  INFO 20132 --- [http-nio-9797-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
-2020-08-01 17:52:05.964  INFO 20076 --- [main] com.wx.xcx.XcxApplication                : Starting XcxApplication on DESKTOP-8NN5IVC with PID 20076 (C:\Users\48738\Desktop\xcx\target\classes started by 48738 in C:\Users\48738\Desktop\xcx)
-2020-08-01 17:52:05.967  INFO 20076 --- [main] com.wx.xcx.XcxApplication                : No active profile set, falling back to default profiles: default
-2020-08-01 17:52:07.614 ERROR 20076 --- [main] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.2.8] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
-2020-08-01 17:52:07.767 ERROR 20076 --- [main] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.2.8] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
-2020-08-01 17:52:07.855  INFO 20076 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9797 (http)
-2020-08-01 17:52:07.866 ERROR 20076 --- [main] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.2.8] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
-2020-08-01 17:52:07.867  INFO 20076 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-08-01 17:52:07.867  INFO 20076 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
-2020-08-01 17:52:07.972  INFO 20076 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-08-01 17:52:07.973  INFO 20076 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1925 ms
-2020-08-01 17:52:09.723  INFO 20076 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-08-01 17:52:09.820  INFO 20076 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-08-01 17:52:10.033  INFO 20076 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9797 (http) with context path ''
-2020-08-01 17:52:10.034  INFO 20076 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-08-01 17:52:10.060  INFO 20076 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-08-01 17:52:10.104  INFO 20076 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-08-01 17:52:10.407  INFO 20076 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: testUsingPOST_1
-2020-08-01 17:52:10.433  INFO 20076 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: testUsingPOST_2
-2020-08-01 17:52:10.459  INFO 20076 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: testUsingPOST_3
-2020-08-01 17:52:10.484  INFO 20076 --- [main] com.wx.xcx.XcxApplication                : Started XcxApplication in 5.445 seconds (JVM running for 7.109)
-2020-08-01 17:52:10.488  INFO 20076 --- [main] com.wx.xcx.XcxApplication                : 项目加载完毕
-2020-08-01 17:52:15.726  INFO 20076 --- [http-nio-9797-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-08-01 17:52:15.726  INFO 20076 --- [http-nio-9797-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2020-08-01 17:52:15.737  INFO 20076 --- [http-nio-9797-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
-2020-08-01 17:53:40.530  INFO 20076 --- [http-nio-9797-exec-9] com.zaxxer.hikari.HikariDataSource       : DateSourceHikariCP - Starting...
-2020-08-01 17:53:40.718  INFO 20076 --- [http-nio-9797-exec-9] com.zaxxer.hikari.HikariDataSource       : DateSourceHikariCP - Start completed.
-2020-08-01 17:53:40.727 DEBUG 20076 --- [http-nio-9797-exec-9] c.w.x.m.FindJobMapper.findJobDetail      : ==>  Preparing: select f.q_id, f.self_ability, f.q_type, f.expected_salary, f.q_time, f.self_email, f.self_phone, f.q_status, f.self_name, f.edu_id,e.edu_id,e.edu_value,w.work_type_id,w.work_type_value from find_job f,education e,work_type w where f.edu_id=e.edu_id and f.q_type=w.work_type_id and f.q_id=? 
-2020-08-01 17:53:40.766 DEBUG 20076 --- [http-nio-9797-exec-9] c.w.x.m.FindJobMapper.findJobDetail      : ==> Parameters: 2(Integer)
-2020-08-01 17:53:40.809 DEBUG 20076 --- [http-nio-9797-exec-9] c.w.x.m.FindJobMapper.findJobDetail      : <==      Total: 1
-2020-08-01 17:54:12.313 DEBUG 20076 --- [http-nio-9797-exec-10] c.w.x.mapper.FindJobMapper.findJobList   : ==>  Preparing: select f.q_id, f.self_ability, f.q_type, f.expected_salary, f.q_time, f.self_email, f.self_phone, f.q_status, f.self_name, f.edu_id,e.edu_id,e.edu_value,w.work_type_id,w.work_type_value from find_job f,education e,work_type w where f.edu_id=e.edu_id and f.q_type=w.work_type_id and f.edu_id=? 
-2020-08-01 17:54:12.314 DEBUG 20076 --- [http-nio-9797-exec-10] c.w.x.mapper.FindJobMapper.findJobList   : ==> Parameters: 1(Integer)
-2020-08-01 17:54:12.318 DEBUG 20076 --- [http-nio-9797-exec-10] c.w.x.mapper.FindJobMapper.findJobList   : <==      Total: 3
-2020-08-01 17:55:26.441  INFO 6824 --- [main] com.wx.xcx.XcxApplication                : Starting XcxApplication on DESKTOP-8NN5IVC with PID 6824 (C:\Users\48738\Desktop\xcx\target\classes started by 48738 in C:\Users\48738\Desktop\xcx)
-2020-08-01 17:55:26.448  INFO 6824 --- [main] com.wx.xcx.XcxApplication                : No active profile set, falling back to default profiles: default
-2020-08-01 17:55:28.200 ERROR 6824 --- [main] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.2.8] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
-2020-08-01 17:55:28.355 ERROR 6824 --- [main] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.2.8] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
-2020-08-01 17:55:28.446  INFO 6824 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9797 (http)
-2020-08-01 17:55:28.456 ERROR 6824 --- [main] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.2.8] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
-2020-08-01 17:55:28.458  INFO 6824 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-08-01 17:55:28.458  INFO 6824 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
-2020-08-01 17:55:28.569  INFO 6824 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-08-01 17:55:28.570  INFO 6824 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2042 ms
-2020-08-01 17:55:30.284  INFO 6824 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-08-01 17:55:30.371  INFO 6824 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-08-01 17:55:30.602  INFO 6824 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9797 (http) with context path ''
-2020-08-01 17:55:30.603  INFO 6824 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-08-01 17:55:30.623  INFO 6824 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-08-01 17:55:30.665  INFO 6824 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-08-01 17:55:30.931  INFO 6824 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: testUsingPOST_1
-2020-08-01 17:55:30.961  INFO 6824 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: testUsingPOST_2
-2020-08-01 17:55:30.982  INFO 6824 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: testUsingPOST_3
-2020-08-01 17:55:31.007  INFO 6824 --- [main] com.wx.xcx.XcxApplication                : Started XcxApplication in 5.583 seconds (JVM running for 7.53)
-2020-08-01 17:55:31.011  INFO 6824 --- [main] com.wx.xcx.XcxApplication                : 项目加载完毕
-2020-08-01 17:55:34.843  INFO 6824 --- [http-nio-9797-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-08-01 17:55:34.845  INFO 6824 --- [http-nio-9797-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2020-08-01 17:55:34.859  INFO 6824 --- [http-nio-9797-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
-2020-08-01 17:55:34.948  INFO 6824 --- [http-nio-9797-exec-1] com.zaxxer.hikari.HikariDataSource       : DateSourceHikariCP - Starting...
-2020-08-01 17:55:35.124  INFO 6824 --- [http-nio-9797-exec-1] com.zaxxer.hikari.HikariDataSource       : DateSourceHikariCP - Start completed.
-2020-08-01 17:55:35.133 DEBUG 6824 --- [http-nio-9797-exec-1] c.w.x.mapper.FindJobMapper.findJobList   : ==>  Preparing: select f.q_id, f.self_ability, f.q_type, f.expected_salary, f.q_time, f.self_email, f.self_phone, f.q_status, f.self_name, f.edu_id,e.edu_id,e.edu_value,w.work_type_id,w.work_type_value from find_job f,education e,work_type w where f.edu_id=e.edu_id and f.q_type=w.work_type_id 
-2020-08-01 17:55:35.164 DEBUG 6824 --- [http-nio-9797-exec-1] c.w.x.mapper.FindJobMapper.findJobList   : ==> Parameters: 
-2020-08-01 17:55:35.208 DEBUG 6824 --- [http-nio-9797-exec-1] c.w.x.mapper.FindJobMapper.findJobList   : <==      Total: 9
-2020-08-01 17:57:42.764 DEBUG 6824 --- [http-nio-9797-exec-4] c.w.x.m.FindJobMapper.findJobInsert      : ==>  Preparing: insert into find_job ( self_ability, q_type, expected_salary, q_time, self_email, self_phone, q_status, self_name, edu_id) values ( ?, ?, ?, ?, ?, ?, ?, ?, ?) 
-2020-08-01 17:57:42.769 DEBUG 6824 --- [http-nio-9797-exec-4] c.w.x.m.FindJobMapper.findJobInsert      : ==> Parameters: 持有会计高级资格证书，有多年的会计经验，曾在阿里巴巴担任首席会计(String), 4(Integer), 10000/月(String), 2020-08-01 17:57:42.763(Timestamp), 487387645@qq.com(String), 15034351364(String), 1(Integer), 马云(String), 2(Integer)
-2020-08-01 17:57:42.774 DEBUG 6824 --- [http-nio-9797-exec-4] c.w.x.m.FindJobMapper.findJobInsert      : <==    Updates: 1
-2020-08-01 17:57:42.792 ERROR 6824 --- [http-nio-9797-exec-4] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.executor.ExecutorException: Error getting generated key or setting result to parameter object. Cause: org.apache.ibatis.executor.ExecutorException: No setter found for the keyProperty 'zId' in 'com.wx.xcx.entity.FindJob'.] with root cause
+2020-08-11 18:07:07.649  WARN 15616 --- [main] o.s.boot.SpringApplication               : Unable to close ApplicationContext
 
-org.apache.ibatis.executor.ExecutorException: No setter found for the keyProperty 'zId' in 'com.wx.xcx.entity.FindJob'.
-	at org.apache.ibatis.executor.keygen.Jdbc3KeyGenerator$KeyAssigner.assign(Jdbc3KeyGenerator.java:262) ~[mybatis-3.5.3.jar:3.5.3]
-	at org.apache.ibatis.executor.keygen.Jdbc3KeyGenerator.lambda$assignKeysToParam$0(Jdbc3KeyGenerator.java:120) ~[mybatis-3.5.3.jar:3.5.3]
-	at java.util.ArrayList.forEach(ArrayList.java:1257) ~[na:1.8.0_171]
-	at org.apache.ibatis.executor.keygen.Jdbc3KeyGenerator.assignKeysToParam(Jdbc3KeyGenerator.java:120) ~[mybatis-3.5.3.jar:3.5.3]
-	at org.apache.ibatis.executor.keygen.Jdbc3KeyGenerator.assignKeys(Jdbc3KeyGenerator.java:100) ~[mybatis-3.5.3.jar:3.5.3]
-	at org.apache.ibatis.executor.keygen.Jdbc3KeyGenerator.processBatch(Jdbc3KeyGenerator.java:81) ~[mybatis-3.5.3.jar:3.5.3]
-	at org.apache.ibatis.executor.keygen.Jdbc3KeyGenerator.processAfter(Jdbc3KeyGenerator.java:67) ~[mybatis-3.5.3.jar:3.5.3]
-	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:51) ~[mybatis-3.5.3.jar:3.5.3]
-	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74) ~[mybatis-3.5.3.jar:3.5.3]
-	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50) ~[mybatis-3.5.3.jar:3.5.3]
-	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117) ~[mybatis-3.5.3.jar:3.5.3]
-	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76) ~[mybatis-3.5.3.jar:3.5.3]
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197) ~[mybatis-3.5.3.jar:3.5.3]
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:184) ~[mybatis-3.5.3.jar:3.5.3]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_171]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_171]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_171]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_171]
-	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426) ~[mybatis-spring-2.0.3.jar:2.0.3]
-	at com.sun.proxy.$Proxy70.insert(Unknown Source) ~[na:na]
-	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:271) ~[mybatis-spring-2.0.3.jar:2.0.3]
-	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62) ~[mybatis-3.5.3.jar:3.5.3]
-	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:93) ~[mybatis-3.5.3.jar:3.5.3]
-	at com.sun.proxy.$Proxy71.findJobInsert(Unknown Source) ~[na:na]
-	at com.wx.xcx.service.impl.FindJobServiceImpl.findJobInsert(FindJobServiceImpl.java:23) ~[classes/:na]
-	at com.wx.xcx.controller.FindJobController.findJobInsert(FindJobController.java:19) ~[classes/:na]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_171]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_171]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_171]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_171]
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105) ~[spring-webmvc-5.2.6.RELEASE.jar:5.2.6.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879) ~[spring-webmvc-5.2.6.RELEASE.jar:5.2.6.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793) ~[spring-webmvc-5.2.6.RELEASE.jar:5.2.6.RELEASE]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.2.6.RELEASE.jar:5.2.6.RELEASE]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) ~[spring-webmvc-5.2.6.RELEASE.jar:5.2.6.RELEASE]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.2.6.RELEASE.jar:5.2.6.RELEASE]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.2.6.RELEASE.jar:5.2.6.RELEASE]
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.2.6.RELEASE.jar:5.2.6.RELEASE]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.2.6.RELEASE.jar:5.2.6.RELEASE]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.35.jar:9.0.35]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.35.jar:9.0.35]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [tomcat-embed-core-9.0.35.jar:9.0.35]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.35.jar:9.0.35]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.35.jar:9.0.35]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.35.jar:9.0.35]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.35.jar:9.0.35]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373) [tomcat-embed-core-9.0.35.jar:9.0.35]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.35.jar:9.0.35]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-9.0.35.jar:9.0.35]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590) [tomcat-embed-core-9.0.35.jar:9.0.35]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.35.jar:9.0.35]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_171]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_171]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.35.jar:9.0.35]
-	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_171]
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.boot.autoconfigure.admin.SpringApplicationAdminJmxAutoConfiguration': Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importRegistry' available
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:603) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:409) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.context.event.AbstractApplicationEventMulticaster.retrieveApplicationListeners(AbstractApplicationEventMulticaster.java:245) ~[spring-context-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.context.event.AbstractApplicationEventMulticaster.getApplicationListeners(AbstractApplicationEventMulticaster.java:197) ~[spring-context-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:134) ~[spring-context-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:403) ~[spring-context-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:360) ~[spring-context-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.boot.availability.AvailabilityChangeEvent.publish(AvailabilityChangeEvent.java:81) ~[spring-boot-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.boot.availability.AvailabilityChangeEvent.publish(AvailabilityChangeEvent.java:67) ~[spring-boot-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:167) ~[spring-boot-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:978) ~[spring-context-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.boot.SpringApplication.handleRunFailure(SpringApplication.java:814) [spring-boot-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:325) [spring-boot-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237) [spring-boot-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) [spring-boot-2.3.0.RELEASE.jar:2.3.0.RELEASE]
+	at com.wx.xcx.XcxApplication.main(XcxApplication.java:18) [classes/:na]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importRegistry' available
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:603) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:409) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:91) ~[spring-aop-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:109) ~[spring-aop-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findEligibleAdvisors(AbstractAdvisorAutoProxyCreator.java:94) ~[spring-aop-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.getAdvicesAndAdvisorsForBean(AbstractAdvisorAutoProxyCreator.java:76) ~[spring-aop-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.wrapIfNecessary(AbstractAutoProxyCreator.java:347) ~[spring-aop-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessAfterInitialization(AbstractAutoProxyCreator.java:299) ~[spring-aop-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:431) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	... 28 common frames omitted
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importRegistry' available
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanDefinition(DefaultListableBeanFactory.java:814) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getMergedLocalBeanDefinition(AbstractBeanFactory.java:1282) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:297) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor.postProcessBeforeInitialization(ConfigurationClassPostProcessor.java:456) ~[spring-context-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:416) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1788) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595) ~[spring-beans-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	... 51 common frames omitted
 
-2020-08-01 17:59:24.220  INFO 2648 --- [main] com.wx.xcx.XcxApplication                : Starting XcxApplication on DESKTOP-8NN5IVC with PID 2648 (C:\Users\48738\Desktop\xcx\target\classes started by 48738 in C:\Users\48738\Desktop\xcx)
-2020-08-01 17:59:24.223  INFO 2648 --- [main] com.wx.xcx.XcxApplication                : No active profile set, falling back to default profiles: default
-2020-08-01 17:59:26.146 ERROR 2648 --- [main] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.2.8] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
-2020-08-01 17:59:26.304 ERROR 2648 --- [main] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.2.8] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
-2020-08-01 17:59:26.405  INFO 2648 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9797 (http)
-2020-08-01 17:59:26.418 ERROR 2648 --- [main] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.2.8] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
-2020-08-01 17:59:26.419  INFO 2648 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-08-01 17:59:26.420  INFO 2648 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
-2020-08-01 17:59:26.533  INFO 2648 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-08-01 17:59:26.533  INFO 2648 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2200 ms
-2020-08-01 17:59:28.357  INFO 2648 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-08-01 17:59:28.457  INFO 2648 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-08-01 17:59:28.698  INFO 2648 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9797 (http) with context path ''
-2020-08-01 17:59:28.700  INFO 2648 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-08-01 17:59:28.718  INFO 2648 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-08-01 17:59:28.762  INFO 2648 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-08-01 17:59:29.017  INFO 2648 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: testUsingPOST_1
-2020-08-01 17:59:29.047  INFO 2648 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: testUsingPOST_2
-2020-08-01 17:59:29.072  INFO 2648 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: testUsingPOST_3
-2020-08-01 17:59:29.098  INFO 2648 --- [main] com.wx.xcx.XcxApplication                : Started XcxApplication in 5.843 seconds (JVM running for 7.636)
-2020-08-01 17:59:29.101  INFO 2648 --- [main] com.wx.xcx.XcxApplication                : 项目加载完毕
-2020-08-01 17:59:33.817  INFO 2648 --- [http-nio-9797-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-08-01 17:59:33.817  INFO 2648 --- [http-nio-9797-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2020-08-01 17:59:33.830  INFO 2648 --- [http-nio-9797-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
-2020-08-01 17:59:33.964  INFO 2648 --- [http-nio-9797-exec-1] com.zaxxer.hikari.HikariDataSource       : DateSourceHikariCP - Starting...
-2020-08-01 17:59:34.161  INFO 2648 --- [http-nio-9797-exec-1] com.zaxxer.hikari.HikariDataSource       : DateSourceHikariCP - Start completed.
-2020-08-01 17:59:34.170 DEBUG 2648 --- [http-nio-9797-exec-1] c.w.x.m.FindJobMapper.findJobInsert      : ==>  Preparing: insert into find_job ( self_ability, q_type, expected_salary, q_time, self_email, self_phone, q_status, self_name, edu_id) values ( ?, ?, ?, ?, ?, ?, ?, ?, ?) 
-2020-08-01 17:59:34.213 DEBUG 2648 --- [http-nio-9797-exec-1] c.w.x.m.FindJobMapper.findJobInsert      : ==> Parameters: 持有会计高级资格证书，有多年的会计经验，曾在阿里巴巴担任首席会计(String), 4(Integer), 10000/月(String), 2020-08-01 17:59:33.94(Timestamp), 487387645@qq.com(String), 15034351364(String), 1(Integer), 马云(String), 2(Integer)
-2020-08-01 17:59:34.225 DEBUG 2648 --- [http-nio-9797-exec-1] c.w.x.m.FindJobMapper.findJobInsert      : <==    Updates: 1
-2020-08-01 18:00:04.537 DEBUG 2648 --- [http-nio-9797-exec-2] c.w.x.m.FindJobMapper.findJobDetail      : ==>  Preparing: select f.q_id, f.self_ability, f.q_type, f.expected_salary, f.q_time, f.self_email, f.self_phone, f.q_status, f.self_name, f.edu_id,e.edu_id,e.edu_value,w.work_type_id,w.work_type_value from find_job f,education e,work_type w where f.edu_id=e.edu_id and f.q_type=w.work_type_id and f.q_id=? 
-2020-08-01 18:00:04.538 DEBUG 2648 --- [http-nio-9797-exec-2] c.w.x.m.FindJobMapper.findJobDetail      : ==> Parameters: 11(Integer)
-2020-08-01 18:00:04.556 DEBUG 2648 --- [http-nio-9797-exec-2] c.w.x.m.FindJobMapper.findJobDetail      : <==      Total: 1
-2020-08-01 18:49:38.847  INFO 17848 --- [main] com.wx.xcx.XcxApplication                : Starting XcxApplication on DESKTOP-8NN5IVC with PID 17848 (C:\Users\48738\Desktop\xcx\target\classes started by 48738 in C:\Users\48738\Desktop\xcx)
-2020-08-01 18:49:38.850  INFO 17848 --- [main] com.wx.xcx.XcxApplication                : No active profile set, falling back to default profiles: default
-2020-08-01 18:49:40.860 ERROR 17848 --- [main] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.2.8] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
-2020-08-01 18:49:41.011 ERROR 17848 --- [main] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.2.8] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
-2020-08-01 18:49:41.103  INFO 17848 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9797 (http)
-2020-08-01 18:49:41.115 ERROR 17848 --- [main] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.2.8] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
-2020-08-01 18:49:41.116  INFO 17848 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-08-01 18:49:41.117  INFO 17848 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
-2020-08-01 18:49:41.223  INFO 17848 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-08-01 18:49:41.223  INFO 17848 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2139 ms
-2020-08-01 18:49:43.069  INFO 17848 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-08-01 18:49:43.175  INFO 17848 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-08-01 18:49:43.400  INFO 17848 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9797 (http) with context path ''
-2020-08-01 18:49:43.402  INFO 17848 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-08-01 18:49:43.420  INFO 17848 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-08-01 18:49:43.469  INFO 17848 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-08-01 18:49:43.742  INFO 17848 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: testUsingPOST_1
-2020-08-01 18:49:43.753  INFO 17848 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: testUsingPOST_2
-2020-08-01 18:49:43.775  INFO 17848 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: testUsingPOST_3
-2020-08-01 18:49:43.799  INFO 17848 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: testUsingPOST_4
-2020-08-01 18:49:43.828  INFO 17848 --- [main] com.wx.xcx.XcxApplication                : Started XcxApplication in 5.843 seconds (JVM running for 7.604)
-2020-08-01 18:49:43.831  INFO 17848 --- [main] com.wx.xcx.XcxApplication                : 项目加载完毕
-2020-08-01 18:49:47.110  INFO 17848 --- [http-nio-9797-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-08-01 18:49:47.110  INFO 17848 --- [http-nio-9797-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2020-08-01 18:49:47.123  INFO 17848 --- [http-nio-9797-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
-2020-08-01 18:51:22.048  INFO 17848 --- [http-nio-9797-exec-1] com.zaxxer.hikari.HikariDataSource       : DateSourceHikariCP - Starting...
-2020-08-01 18:51:22.238  INFO 17848 --- [http-nio-9797-exec-1] com.zaxxer.hikari.HikariDataSource       : DateSourceHikariCP - Start completed.
-2020-08-01 18:51:22.246 DEBUG 17848 --- [http-nio-9797-exec-1] c.w.x.m.SecondHandCarMapper.carInsert    : ==>  Preparing: insert into second_hand_car ( car_age, car_type, car_kilometre, car_phone, car_people, car_time, car_img, car_original_price, car_now_price) values ( ?, ?, ?, ?, ?, ?, ?, ?, ?) 
-2020-08-01 18:51:22.287 DEBUG 17848 --- [http-nio-9797-exec-1] c.w.x.m.SecondHandCarMapper.carInsert    : ==> Parameters: 上海大众顶配(String), 1(Integer), 2000公里(String), 15034351364(String), 韩志盛(String), 2020-08-01 18:51:22.025(Timestamp), https://hzsfile.oss-cn-beijing.aliyuncs.com/images/2020/08/01/15962790031923334.png(String), 25万(String), 15万(String)
-2020-08-01 18:51:22.294 DEBUG 17848 --- [http-nio-9797-exec-1] c.w.x.m.SecondHandCarMapper.carInsert    : <==    Updates: 1
-2020-08-01 18:52:25.023 DEBUG 17848 --- [http-nio-9797-exec-5] c.w.x.m.SecondHandCarMapper.carInsert    : ==>  Preparing: insert into second_hand_car ( car_age, car_type, car_kilometre, car_phone, car_people, car_time, car_img, car_original_price, car_now_price) values ( ?, ?, ?, ?, ?, ?, ?, ?, ?) 
-2020-08-01 18:52:25.024 DEBUG 17848 --- [http-nio-9797-exec-5] c.w.x.m.SecondHandCarMapper.carInsert    : ==> Parameters: 牧马人顶配(String), 2(Integer), 2000公里(String), 15034351364(String), 韩志盛(String), 2020-08-01 18:52:25.021(Timestamp), https://hzsfile.oss-cn-beijing.aliyuncs.com/images/2020/08/01/15962791110464409.png,https://hzsfile.oss-cn-beijing.aliyuncs.com/images/2020/08/01/15962791147812225.png,https://hzsfile.oss-cn-beijing.aliyuncs.com/images/2020/08/01/15962791180713338.png(String), 75万(String), 35万(String)
-2020-08-01 18:52:25.034 DEBUG 17848 --- [http-nio-9797-exec-5] c.w.x.m.SecondHandCarMapper.carInsert    : <==    Updates: 1
-2020-08-01 18:56:30.359  INFO 21428 --- [main] com.wx.xcx.XcxApplication                : Starting XcxApplication on DESKTOP-8NN5IVC with PID 21428 (C:\Users\48738\Desktop\xcx\target\classes started by 48738 in C:\Users\48738\Desktop\xcx)
-2020-08-01 18:56:30.361  INFO 21428 --- [main] com.wx.xcx.XcxApplication                : No active profile set, falling back to default profiles: default
-2020-08-01 18:56:32.434 ERROR 21428 --- [main] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.2.8] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
-2020-08-01 18:56:32.584 ERROR 21428 --- [main] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.2.8] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
-2020-08-01 18:56:32.675  INFO 21428 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9797 (http)
-2020-08-01 18:56:32.687 ERROR 21428 --- [main] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.2.8] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
-2020-08-01 18:56:32.688  INFO 21428 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-08-01 18:56:32.688  INFO 21428 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
-2020-08-01 18:56:32.796  INFO 21428 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-08-01 18:56:32.796  INFO 21428 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2326 ms
-2020-08-01 18:56:34.552  INFO 21428 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-08-01 18:56:34.639  INFO 21428 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-08-01 18:56:34.847  INFO 21428 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9797 (http) with context path ''
-2020-08-01 18:56:34.849  INFO 21428 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-08-01 18:56:34.866  INFO 21428 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-08-01 18:56:34.910  INFO 21428 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-08-01 18:56:35.162  INFO 21428 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: testUsingPOST_1
-2020-08-01 18:56:35.189  INFO 21428 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: testUsingPOST_2
-2020-08-01 18:56:35.210  INFO 21428 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: testUsingPOST_3
-2020-08-01 18:56:35.233  INFO 21428 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: testUsingPOST_4
-2020-08-01 18:56:35.259  INFO 21428 --- [main] com.wx.xcx.XcxApplication                : Started XcxApplication in 5.837 seconds (JVM running for 7.388)
-2020-08-01 18:56:35.263  INFO 21428 --- [main] com.wx.xcx.XcxApplication                : 项目加载完毕
-2020-08-01 18:56:44.623  INFO 21428 --- [http-nio-9797-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-08-01 18:56:44.623  INFO 21428 --- [http-nio-9797-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2020-08-01 18:56:44.636  INFO 21428 --- [http-nio-9797-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
-2020-08-01 18:56:57.433  INFO 21428 --- [http-nio-9797-exec-8] com.zaxxer.hikari.HikariDataSource       : DateSourceHikariCP - Starting...
-2020-08-01 18:56:57.589  INFO 21428 --- [http-nio-9797-exec-8] com.zaxxer.hikari.HikariDataSource       : DateSourceHikariCP - Start completed.
-2020-08-01 18:56:57.597 DEBUG 21428 --- [http-nio-9797-exec-8] c.w.x.m.SecondHandCarMapper.carList      : ==>  Preparing: select s.car_id, s.car_age, s.car_type, s.car_kilometre, s.car_phone, s.car_people, s.car_time, s.car_img, s.car_status, s.car_original_price, s.car_now_price , c.car_type_id,c.car_type_value from second_hand_car s,car_type c where s.car_type=c.car_type_id 
-2020-08-01 18:56:57.627 DEBUG 21428 --- [http-nio-9797-exec-8] c.w.x.m.SecondHandCarMapper.carList      : ==> Parameters: 
-2020-08-01 18:56:57.653 DEBUG 21428 --- [http-nio-9797-exec-8] c.w.x.m.SecondHandCarMapper.carList      : <==      Total: 2
-2020-08-01 18:57:17.321 DEBUG 21428 --- [http-nio-9797-exec-9] c.w.x.m.SecondHandCarMapper.carList      : ==>  Preparing: select s.car_id, s.car_age, s.car_type, s.car_kilometre, s.car_phone, s.car_people, s.car_time, s.car_img, s.car_status, s.car_original_price, s.car_now_price , c.car_type_id,c.car_type_value from second_hand_car s,car_type c where s.car_type=c.car_type_id and s.car_type=? 
-2020-08-01 18:57:17.322 DEBUG 21428 --- [http-nio-9797-exec-9] c.w.x.m.SecondHandCarMapper.carList      : ==> Parameters: 2(Integer)
-2020-08-01 18:57:17.323 DEBUG 21428 --- [http-nio-9797-exec-9] c.w.x.m.SecondHandCarMapper.carList      : <==      Total: 1
-2020-08-01 18:57:23.872 DEBUG 21428 --- [http-nio-9797-exec-10] c.w.x.m.SecondHandCarMapper.carDetail    : ==>  Preparing: select s.car_id, s.car_age, s.car_type, s.car_kilometre, s.car_phone, s.car_people, s.car_time, s.car_img, s.car_status, s.car_original_price, s.car_now_price , c.car_type_id,c.car_type_value from second_hand_car s,car_type c where s.car_type=c.car_type_id and s.car_id=? 
-2020-08-01 18:57:23.873 DEBUG 21428 --- [http-nio-9797-exec-10] c.w.x.m.SecondHandCarMapper.carDetail    : ==> Parameters: 1(Integer)
-2020-08-01 18:57:23.878 DEBUG 21428 --- [http-nio-9797-exec-10] c.w.x.m.SecondHandCarMapper.carDetail    : <==      Total: 1
-2020-08-01 18:58:01.041  INFO 13264 --- [main] com.wx.xcx.XcxApplication                : Starting XcxApplication on DESKTOP-8NN5IVC with PID 13264 (C:\Users\48738\Desktop\xcx\target\classes started by 48738 in C:\Users\48738\Desktop\xcx)
-2020-08-01 18:58:01.043  INFO 13264 --- [main] com.wx.xcx.XcxApplication                : No active profile set, falling back to default profiles: default
-2020-08-01 18:58:02.922 ERROR 13264 --- [main] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.2.8] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
-2020-08-01 18:58:03.075 ERROR 13264 --- [main] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.2.8] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
-2020-08-01 18:58:03.167  INFO 13264 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9797 (http)
-2020-08-01 18:58:03.180 ERROR 13264 --- [main] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.2.8] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
-2020-08-01 18:58:03.181  INFO 13264 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-08-01 18:58:03.181  INFO 13264 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
-2020-08-01 18:58:03.286  INFO 13264 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-08-01 18:58:03.286  INFO 13264 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2153 ms
-2020-08-01 18:58:05.104  INFO 13264 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-08-01 18:58:05.189  INFO 13264 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-08-01 18:58:05.399  INFO 13264 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9797 (http) with context path ''
-2020-08-01 18:58:05.401  INFO 13264 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-08-01 18:58:05.419  INFO 13264 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-08-01 18:58:05.466  INFO 13264 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-08-01 18:58:05.772  INFO 13264 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: testUsingPOST_1
-2020-08-01 18:58:05.798  INFO 13264 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: testUsingPOST_2
-2020-08-01 18:58:05.825  INFO 13264 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: testUsingPOST_3
-2020-08-01 18:58:05.849  INFO 13264 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: testUsingPOST_4
-2020-08-01 18:58:05.878  INFO 13264 --- [main] com.wx.xcx.XcxApplication                : Started XcxApplication in 5.795 seconds (JVM running for 7.314)
-2020-08-01 18:58:05.881  INFO 13264 --- [main] com.wx.xcx.XcxApplication                : 项目加载完毕
-2020-08-01 18:58:23.542  INFO 13264 --- [http-nio-9797-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-08-01 18:58:23.543  INFO 13264 --- [http-nio-9797-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2020-08-01 18:58:23.554  INFO 13264 --- [http-nio-9797-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
-2020-08-01 18:58:23.647  INFO 13264 --- [http-nio-9797-exec-1] com.zaxxer.hikari.HikariDataSource       : DateSourceHikariCP - Starting...
-2020-08-01 18:58:23.833  INFO 13264 --- [http-nio-9797-exec-1] com.zaxxer.hikari.HikariDataSource       : DateSourceHikariCP - Start completed.
-2020-08-01 18:58:23.841 DEBUG 13264 --- [http-nio-9797-exec-1] c.w.x.m.SecondHandCarMapper.carList      : ==>  Preparing: select s.car_id, s.car_age, s.car_type, s.car_kilometre, s.car_phone, s.car_people, s.car_time, s.car_img, s.car_status, s.car_original_price, s.car_now_price , c.car_type_id,c.car_type_value from second_hand_car s,car_type c where s.car_type=c.car_type_id 
-2020-08-01 18:58:23.874 DEBUG 13264 --- [http-nio-9797-exec-1] c.w.x.m.SecondHandCarMapper.carList      : ==> Parameters: 
-2020-08-01 18:58:23.906 DEBUG 13264 --- [http-nio-9797-exec-1] c.w.x.m.SecondHandCarMapper.carList      : <==      Total: 2
-2020-08-01 18:58:31.209 DEBUG 13264 --- [http-nio-9797-exec-2] c.w.x.m.SecondHandCarMapper.carList      : ==>  Preparing: select s.car_id, s.car_age, s.car_type, s.car_kilometre, s.car_phone, s.car_people, s.car_time, s.car_img, s.car_status, s.car_original_price, s.car_now_price , c.car_type_id,c.car_type_value from second_hand_car s,car_type c where s.car_type=c.car_type_id and s.car_type=? 
-2020-08-01 18:58:31.211 DEBUG 13264 --- [http-nio-9797-exec-2] c.w.x.m.SecondHandCarMapper.carList      : ==> Parameters: 1(Integer)
-2020-08-01 18:58:31.216 DEBUG 13264 --- [http-nio-9797-exec-2] c.w.x.m.SecondHandCarMapper.carList      : <==      Total: 1
-2020-08-01 19:13:58.213  INFO 17208 --- [main] com.wx.xcx.XcxApplication                : Starting XcxApplication on DESKTOP-8NN5IVC with PID 17208 (C:\Users\48738\Desktop\xcx\target\classes started by 48738 in C:\Users\48738\Desktop\xcx)
-2020-08-01 19:13:58.216  INFO 17208 --- [main] com.wx.xcx.XcxApplication                : No active profile set, falling back to default profiles: default
-2020-08-01 19:14:00.330 ERROR 17208 --- [main] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.2.8] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
-2020-08-01 19:14:00.504 ERROR 17208 --- [main] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.2.8] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
-2020-08-01 19:14:00.608  INFO 17208 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9797 (http)
-2020-08-01 19:14:00.618 ERROR 17208 --- [main] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.2.8] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
-2020-08-01 19:14:00.620  INFO 17208 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-08-01 19:14:00.620  INFO 17208 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
-2020-08-01 19:14:00.728  INFO 17208 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-08-01 19:14:00.729  INFO 17208 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2365 ms
-2020-08-01 19:14:02.439  INFO 17208 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-08-01 19:14:02.528  INFO 17208 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-08-01 19:14:02.736  INFO 17208 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9797 (http) with context path ''
-2020-08-01 19:14:02.738  INFO 17208 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-08-01 19:14:02.757  INFO 17208 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-08-01 19:14:02.803  INFO 17208 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-08-01 19:14:03.068  INFO 17208 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: testUsingPOST_1
-2020-08-01 19:14:03.094  INFO 17208 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: testUsingPOST_2
-2020-08-01 19:14:03.112  INFO 17208 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: testUsingPOST_3
-2020-08-01 19:14:03.140  INFO 17208 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: testUsingPOST_4
-2020-08-01 19:14:03.164  INFO 17208 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: testUsingPOST_5
-2020-08-01 19:14:03.194  INFO 17208 --- [main] com.wx.xcx.XcxApplication                : Started XcxApplication in 5.998 seconds (JVM running for 7.927)
-2020-08-01 19:14:03.197  INFO 17208 --- [main] com.wx.xcx.XcxApplication                : 项目加载完毕
-2020-08-01 19:14:07.197  INFO 17208 --- [http-nio-9797-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-08-01 19:14:07.197  INFO 17208 --- [http-nio-9797-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2020-08-01 19:14:07.210  INFO 17208 --- [http-nio-9797-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
-2020-08-01 19:15:46.227  INFO 17208 --- [http-nio-9797-exec-4] com.zaxxer.hikari.HikariDataSource       : DateSourceHikariCP - Starting...
-2020-08-01 19:15:46.394  INFO 17208 --- [http-nio-9797-exec-4] com.zaxxer.hikari.HikariDataSource       : DateSourceHikariCP - Start completed.
-2020-08-01 19:15:46.404 DEBUG 17208 --- [http-nio-9797-exec-4] c.w.x.m.S.houstInsert                    : ==>  Preparing: insert into second_hand_house (h_address, h_phone, h_people, h_content, h_time, h_img, h_money ) values (?, ?, ?, ?, ?, ?, ? ) 
-2020-08-01 19:15:46.471 DEBUG 17208 --- [http-nio-9797-exec-4] c.w.x.m.S.houstInsert                    : ==> Parameters: 花园路十四号(String), 15034351364(String), 韩志盛(String), 12年购入得120平楼房，精装修，带家电(String), 2020-08-01 19:15:46.206(Timestamp), https://hzsfile.oss-cn-beijing.aliyuncs.com/images/2020/08/01/1596280458737344.png,https://hzsfile.oss-cn-beijing.aliyuncs.com/images/2020/08/01/15962804651213202.png,https://hzsfile.oss-cn-beijing.aliyuncs.com/images/2020/08/01/15962804691053190.png(String), 150万(String)
-2020-08-01 19:15:46.483 DEBUG 17208 --- [http-nio-9797-exec-4] c.w.x.m.S.houstInsert                    : <==    Updates: 1
-2020-08-01 19:15:50.331 DEBUG 17208 --- [http-nio-9797-exec-3] c.w.x.m.SecondHandHouseMapper.houseList  : ==>  Preparing: select h_id, h_address, h_phone, h_people, h_content, h_time, h_img, h_status, h_money from second_hand_house 
-2020-08-01 19:15:50.332 DEBUG 17208 --- [http-nio-9797-exec-3] c.w.x.m.SecondHandHouseMapper.houseList  : ==> Parameters: 
-2020-08-01 19:15:50.355 DEBUG 17208 --- [http-nio-9797-exec-3] c.w.x.m.SecondHandHouseMapper.houseList  : <==      Total: 1
-2020-08-01 19:16:01.292 DEBUG 17208 --- [http-nio-9797-exec-5] c.w.x.m.S.houstInsert                    : ==>  Preparing: insert into second_hand_house (h_address, h_phone, h_people, h_content, h_time, h_img, h_money ) values (?, ?, ?, ?, ?, ?, ? ) 
-2020-08-01 19:16:01.294 DEBUG 17208 --- [http-nio-9797-exec-5] c.w.x.m.S.houstInsert                    : ==> Parameters: 花园路十四号(String), 15034351364(String), 韩志盛(String), 12年购入得120平楼房，精装修，带家电(String), 2020-08-01 19:16:01.291(Timestamp), (String), 150万(String)
-2020-08-01 19:16:01.298 DEBUG 17208 --- [http-nio-9797-exec-5] c.w.x.m.S.houstInsert                    : <==    Updates: 1
-2020-08-01 19:16:03.922 DEBUG 17208 --- [http-nio-9797-exec-6] c.w.x.m.SecondHandHouseMapper.houseList  : ==>  Preparing: select h_id, h_address, h_phone, h_people, h_content, h_time, h_img, h_status, h_money from second_hand_house 
-2020-08-01 19:16:03.924 DEBUG 17208 --- [http-nio-9797-exec-6] c.w.x.m.SecondHandHouseMapper.houseList  : ==> Parameters: 
-2020-08-01 19:16:03.927 DEBUG 17208 --- [http-nio-9797-exec-6] c.w.x.m.SecondHandHouseMapper.houseList  : <==      Total: 2
-2020-08-01 19:16:21.385 DEBUG 17208 --- [http-nio-9797-exec-7] c.w.x.m.S.houseDetail                    : ==>  Preparing: select h_id, h_address, h_phone, h_people, h_content, h_time, h_img, h_status, h_money from second_hand_house where h_id=? 
-2020-08-01 19:16:21.386 DEBUG 17208 --- [http-nio-9797-exec-7] c.w.x.m.S.houseDetail                    : ==> Parameters: 1(Integer)
-2020-08-01 19:16:21.388 DEBUG 17208 --- [http-nio-9797-exec-7] c.w.x.m.S.houseDetail                    : <==      Total: 1
-2020-08-01 19:16:21.411 ERROR 17208 --- [http-nio-9797-exec-7] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.ClassCastException: com.wx.xcx.entity.SecondHandHouse cannot be cast to com.wx.xcx.vo.SecondHandHouseVO] with root cause
-
-java.lang.ClassCastException: com.wx.xcx.entity.SecondHandHouse cannot be cast to com.wx.xcx.vo.SecondHandHouseVO
-	at com.sun.proxy.$Proxy79.houseDetail(Unknown Source) ~[na:na]
-	at com.wx.xcx.service.impl.SecondHandHouseServiceImpl.houseDetail(SecondHandHouseServiceImpl.java:31) ~[classes/:na]
-	at com.wx.xcx.controller.SecondHandHouseController.getHoust(SecondHandHouseController.java:45) ~[classes/:na]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_171]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_171]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_171]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_171]
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105) ~[spring-webmvc-5.2.6.RELEASE.jar:5.2.6.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879) ~[spring-webmvc-5.2.6.RELEASE.jar:5.2.6.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793) ~[spring-webmvc-5.2.6.RELEASE.jar:5.2.6.RELEASE]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.2.6.RELEASE.jar:5.2.6.RELEASE]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) ~[spring-webmvc-5.2.6.RELEASE.jar:5.2.6.RELEASE]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.2.6.RELEASE.jar:5.2.6.RELEASE]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.2.6.RELEASE.jar:5.2.6.RELEASE]
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.2.6.RELEASE.jar:5.2.6.RELEASE]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.2.6.RELEASE.jar:5.2.6.RELEASE]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.35.jar:9.0.35]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.35.jar:9.0.35]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [tomcat-embed-core-9.0.35.jar:9.0.35]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.35.jar:9.0.35]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.35.jar:9.0.35]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.35.jar:9.0.35]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.35.jar:9.0.35]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373) [tomcat-embed-core-9.0.35.jar:9.0.35]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.35.jar:9.0.35]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-9.0.35.jar:9.0.35]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590) [tomcat-embed-core-9.0.35.jar:9.0.35]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.35.jar:9.0.35]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_171]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_171]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.35.jar:9.0.35]
-	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_171]
-
-2020-08-01 19:19:44.089  INFO 21892 --- [main] com.wx.xcx.XcxApplication                : Starting XcxApplication on DESKTOP-8NN5IVC with PID 21892 (C:\Users\48738\Desktop\xcx\target\classes started by 48738 in C:\Users\48738\Desktop\xcx)
-2020-08-01 19:19:44.093  INFO 21892 --- [main] com.wx.xcx.XcxApplication                : No active profile set, falling back to default profiles: default
-2020-08-01 19:19:45.943 ERROR 21892 --- [main] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.2.8] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
-2020-08-01 19:19:46.118 ERROR 21892 --- [main] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.2.8] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
-2020-08-01 19:19:46.220  INFO 21892 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9797 (http)
-2020-08-01 19:19:46.231 ERROR 21892 --- [main] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.2.8] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
-2020-08-01 19:19:46.232  INFO 21892 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-08-01 19:19:46.233  INFO 21892 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
-2020-08-01 19:19:46.333  INFO 21892 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-08-01 19:19:46.334  INFO 21892 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2115 ms
-2020-08-01 19:19:48.050  INFO 21892 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-08-01 19:19:48.136  INFO 21892 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-08-01 19:19:48.346  INFO 21892 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9797 (http) with context path ''
-2020-08-01 19:19:48.348  INFO 21892 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-08-01 19:19:48.367  INFO 21892 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-08-01 19:19:48.411  INFO 21892 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-08-01 19:19:48.691  INFO 21892 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: testUsingPOST_1
-2020-08-01 19:19:48.713  INFO 21892 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: testUsingPOST_2
-2020-08-01 19:19:48.731  INFO 21892 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: testUsingPOST_3
-2020-08-01 19:19:48.751  INFO 21892 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: testUsingPOST_4
-2020-08-01 19:19:48.773  INFO 21892 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: testUsingPOST_5
-2020-08-01 19:19:48.797  INFO 21892 --- [main] com.wx.xcx.XcxApplication                : Started XcxApplication in 5.583 seconds (JVM running for 7.129)
-2020-08-01 19:19:48.800  INFO 21892 --- [main] com.wx.xcx.XcxApplication                : 项目加载完毕
-2020-08-01 19:20:11.363  INFO 21892 --- [http-nio-9797-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-08-01 19:20:11.364  INFO 21892 --- [http-nio-9797-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2020-08-01 19:20:11.375  INFO 21892 --- [http-nio-9797-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
-2020-08-01 19:20:11.457  INFO 21892 --- [http-nio-9797-exec-1] com.zaxxer.hikari.HikariDataSource       : DateSourceHikariCP - Starting...
-2020-08-01 19:20:11.634  INFO 21892 --- [http-nio-9797-exec-1] com.zaxxer.hikari.HikariDataSource       : DateSourceHikariCP - Start completed.
-2020-08-01 19:20:11.644 DEBUG 21892 --- [http-nio-9797-exec-1] c.w.x.m.S.houseDetail                    : ==>  Preparing: select h_id, h_address, h_phone, h_people, h_content, h_time, h_img, h_status, h_money from second_hand_house where h_id=? 
-2020-08-01 19:20:11.695 DEBUG 21892 --- [http-nio-9797-exec-1] c.w.x.m.S.houseDetail                    : ==> Parameters: 1(Integer)
-2020-08-01 19:20:11.750 ERROR 21892 --- [http-nio-9797-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.executor.ExecutorException: A query was run and no Result Maps were found for the Mapped Statement 'com.wx.xcx.mapper.SecondHandHouseMapper.houseDetail'.  It's likely that neither a Result Type nor a Result Map was specified.] with root cause
-
-org.apache.ibatis.executor.ExecutorException: A query was run and no Result Maps were found for the Mapped Statement 'com.wx.xcx.mapper.SecondHandHouseMapper.houseDetail'.  It's likely that neither a Result Type nor a Result Map was specified.
-	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.validateResultMapsCount(DefaultResultSetHandler.java:289) ~[mybatis-3.5.3.jar:3.5.3]
-	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleResultSets(DefaultResultSetHandler.java:191) ~[mybatis-3.5.3.jar:3.5.3]
-	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:65) ~[mybatis-3.5.3.jar:3.5.3]
-	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79) ~[mybatis-3.5.3.jar:3.5.3]
-	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63) ~[mybatis-3.5.3.jar:3.5.3]
-	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324) ~[mybatis-3.5.3.jar:3.5.3]
-	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156) ~[mybatis-3.5.3.jar:3.5.3]
-	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109) ~[mybatis-3.5.3.jar:3.5.3]
-	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83) ~[mybatis-3.5.3.jar:3.5.3]
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147) ~[mybatis-3.5.3.jar:3.5.3]
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140) ~[mybatis-3.5.3.jar:3.5.3]
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:76) ~[mybatis-3.5.3.jar:3.5.3]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_171]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_171]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_171]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_171]
-	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426) ~[mybatis-spring-2.0.3.jar:2.0.3]
-	at com.sun.proxy.$Proxy70.selectOne(Unknown Source) ~[na:na]
-	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:159) ~[mybatis-spring-2.0.3.jar:2.0.3]
-	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:87) ~[mybatis-3.5.3.jar:3.5.3]
-	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:93) ~[mybatis-3.5.3.jar:3.5.3]
-	at com.sun.proxy.$Proxy79.houseDetail(Unknown Source) ~[na:na]
-	at com.wx.xcx.service.impl.SecondHandHouseServiceImpl.houseDetail(SecondHandHouseServiceImpl.java:31) ~[classes/:na]
-	at com.wx.xcx.controller.SecondHandHouseController.getHoust(SecondHandHouseController.java:45) ~[classes/:na]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_171]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_171]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_171]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_171]
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105) ~[spring-webmvc-5.2.6.RELEASE.jar:5.2.6.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879) ~[spring-webmvc-5.2.6.RELEASE.jar:5.2.6.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793) ~[spring-webmvc-5.2.6.RELEASE.jar:5.2.6.RELEASE]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.2.6.RELEASE.jar:5.2.6.RELEASE]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) ~[spring-webmvc-5.2.6.RELEASE.jar:5.2.6.RELEASE]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.2.6.RELEASE.jar:5.2.6.RELEASE]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.2.6.RELEASE.jar:5.2.6.RELEASE]
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.2.6.RELEASE.jar:5.2.6.RELEASE]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.2.6.RELEASE.jar:5.2.6.RELEASE]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.35.jar:9.0.35]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.35.jar:9.0.35]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [tomcat-embed-core-9.0.35.jar:9.0.35]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.35.jar:9.0.35]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.35.jar:9.0.35]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.35.jar:9.0.35]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.35.jar:9.0.35]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373) [tomcat-embed-core-9.0.35.jar:9.0.35]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.35.jar:9.0.35]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-9.0.35.jar:9.0.35]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590) [tomcat-embed-core-9.0.35.jar:9.0.35]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.35.jar:9.0.35]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_171]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_171]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.35.jar:9.0.35]
-	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_171]
-
-2020-08-01 19:20:57.550  INFO 19192 --- [main] com.wx.xcx.XcxApplication                : Starting XcxApplication on DESKTOP-8NN5IVC with PID 19192 (C:\Users\48738\Desktop\xcx\target\classes started by 48738 in C:\Users\48738\Desktop\xcx)
-2020-08-01 19:20:57.553  INFO 19192 --- [main] com.wx.xcx.XcxApplication                : No active profile set, falling back to default profiles: default
-2020-08-01 19:20:59.364 ERROR 19192 --- [main] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.2.8] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
-2020-08-01 19:20:59.517 ERROR 19192 --- [main] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.2.8] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
-2020-08-01 19:20:59.601  INFO 19192 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9797 (http)
-2020-08-01 19:20:59.612 ERROR 19192 --- [main] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.2.8] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
-2020-08-01 19:20:59.613  INFO 19192 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-08-01 19:20:59.614  INFO 19192 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
-2020-08-01 19:20:59.729  INFO 19192 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-08-01 19:20:59.729  INFO 19192 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2032 ms
-2020-08-01 19:21:01.440  INFO 19192 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-08-01 19:21:01.524  INFO 19192 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-08-01 19:21:01.756  INFO 19192 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9797 (http) with context path ''
-2020-08-01 19:21:01.757  INFO 19192 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-08-01 19:21:01.778  INFO 19192 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-08-01 19:21:01.831  INFO 19192 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-08-01 19:21:02.099  INFO 19192 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: testUsingPOST_1
-2020-08-01 19:21:02.123  INFO 19192 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: testUsingPOST_2
-2020-08-01 19:21:02.144  INFO 19192 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: testUsingPOST_3
-2020-08-01 19:21:02.164  INFO 19192 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: testUsingPOST_4
-2020-08-01 19:21:02.185  INFO 19192 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: testUsingPOST_5
-2020-08-01 19:21:02.230  INFO 19192 --- [main] com.wx.xcx.XcxApplication                : Started XcxApplication in 5.522 seconds (JVM running for 6.997)
-2020-08-01 19:21:02.233  INFO 19192 --- [main] com.wx.xcx.XcxApplication                : 项目加载完毕
-2020-08-01 19:21:06.209  INFO 19192 --- [http-nio-9797-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-08-01 19:21:06.210  INFO 19192 --- [http-nio-9797-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2020-08-01 19:21:06.223  INFO 19192 --- [http-nio-9797-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
-2020-08-01 19:21:06.295  INFO 19192 --- [http-nio-9797-exec-1] com.zaxxer.hikari.HikariDataSource       : DateSourceHikariCP - Starting...
-2020-08-01 19:21:06.478  INFO 19192 --- [http-nio-9797-exec-1] com.zaxxer.hikari.HikariDataSource       : DateSourceHikariCP - Start completed.
-2020-08-01 19:21:06.487 DEBUG 19192 --- [http-nio-9797-exec-1] c.w.x.m.S.houseDetail                    : ==>  Preparing: select h_id, h_address, h_phone, h_people, h_content, h_time, h_img, h_status, h_money from second_hand_house where h_id=? 
-2020-08-01 19:21:06.514 DEBUG 19192 --- [http-nio-9797-exec-1] c.w.x.m.S.houseDetail                    : ==> Parameters: 1(Integer)
-2020-08-01 19:21:06.539 DEBUG 19192 --- [http-nio-9797-exec-1] c.w.x.m.S.houseDetail                    : <==      Total: 1
-2020-08-01 19:21:36.855 DEBUG 19192 --- [http-nio-9797-exec-2] c.w.x.m.SecondHandHouseMapper.houseList  : ==>  Preparing: select h_id, h_address, h_phone, h_people, h_content, h_time, h_img, h_status, h_money from second_hand_house 
-2020-08-01 19:21:36.856 DEBUG 19192 --- [http-nio-9797-exec-2] c.w.x.m.SecondHandHouseMapper.houseList  : ==> Parameters: 
-2020-08-01 19:21:36.860 DEBUG 19192 --- [http-nio-9797-exec-2] c.w.x.m.SecondHandHouseMapper.houseList  : <==      Total: 2
-2020-08-01 19:21:46.100 DEBUG 19192 --- [http-nio-9797-exec-3] c.w.x.m.S.houseDetail                    : ==>  Preparing: select h_id, h_address, h_phone, h_people, h_content, h_time, h_img, h_status, h_money from second_hand_house where h_id=? 
-2020-08-01 19:21:46.101 DEBUG 19192 --- [http-nio-9797-exec-3] c.w.x.m.S.houseDetail                    : ==> Parameters: 2(Integer)
-2020-08-01 19:21:46.102 DEBUG 19192 --- [http-nio-9797-exec-3] c.w.x.m.S.houseDetail                    : <==      Total: 1
-2020-08-01 19:22:39.731  INFO 5748 --- [main] com.wx.xcx.XcxApplication                : Starting XcxApplication on DESKTOP-8NN5IVC with PID 5748 (C:\Users\48738\Desktop\xcx\target\classes started by 48738 in C:\Users\48738\Desktop\xcx)
-2020-08-01 19:22:39.734  INFO 5748 --- [main] com.wx.xcx.XcxApplication                : No active profile set, falling back to default profiles: default
-2020-08-01 19:22:41.633 ERROR 5748 --- [main] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.2.8] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
-2020-08-01 19:22:41.782 ERROR 5748 --- [main] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.2.8] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
-2020-08-01 19:22:41.879  INFO 5748 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9797 (http)
-2020-08-01 19:22:41.891 ERROR 5748 --- [main] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.2.8] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
-2020-08-01 19:22:41.893  INFO 5748 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-08-01 19:22:41.893  INFO 5748 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
-2020-08-01 19:22:42.010  INFO 5748 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-08-01 19:22:42.011  INFO 5748 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2141 ms
-2020-08-01 19:22:44.597  INFO 5748 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-08-01 19:22:44.765  INFO 5748 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-08-01 19:22:45.223  INFO 5748 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9797 (http) with context path ''
-2020-08-01 19:22:45.225  INFO 5748 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-08-01 19:22:45.256  INFO 5748 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-08-01 19:22:45.343  INFO 5748 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-08-01 19:22:45.730  INFO 5748 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: testUsingPOST_1
-2020-08-01 19:22:45.772  INFO 5748 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: testUsingPOST_2
-2020-08-01 19:22:45.799  INFO 5748 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: testUsingPOST_3
-2020-08-01 19:22:45.830  INFO 5748 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: testUsingPOST_4
-2020-08-01 19:22:45.865  INFO 5748 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: testUsingPOST_5
-2020-08-01 19:22:45.901  INFO 5748 --- [main] com.wx.xcx.XcxApplication                : Started XcxApplication in 7.037 seconds (JVM running for 8.491)
-2020-08-01 19:22:45.904  INFO 5748 --- [main] com.wx.xcx.XcxApplication                : 项目加载完毕
-2020-08-01 19:22:49.892  INFO 5748 --- [http-nio-9797-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-08-01 19:22:49.893  INFO 5748 --- [http-nio-9797-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2020-08-01 19:22:49.904  INFO 5748 --- [http-nio-9797-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
-2020-08-01 19:22:49.993  INFO 5748 --- [http-nio-9797-exec-1] com.zaxxer.hikari.HikariDataSource       : DateSourceHikariCP - Starting...
-2020-08-01 19:22:50.216  INFO 5748 --- [http-nio-9797-exec-1] com.zaxxer.hikari.HikariDataSource       : DateSourceHikariCP - Start completed.
-2020-08-01 19:22:50.227 DEBUG 5748 --- [http-nio-9797-exec-1] c.w.x.m.S.houseDetail                    : ==>  Preparing: select h_id, h_address, h_phone, h_people, h_content, h_time, h_img, h_status, h_money from second_hand_house where h_id=? 
-2020-08-01 19:22:50.260 DEBUG 5748 --- [http-nio-9797-exec-1] c.w.x.m.S.houseDetail                    : ==> Parameters: 2(Integer)
-2020-08-01 19:22:50.295 DEBUG 5748 --- [http-nio-9797-exec-1] c.w.x.m.S.houseDetail                    : <==      Total: 1
-2020-08-01 19:22:54.775 DEBUG 5748 --- [http-nio-9797-exec-2] c.w.x.m.S.houseDetail                    : ==>  Preparing: select h_id, h_address, h_phone, h_people, h_content, h_time, h_img, h_status, h_money from second_hand_house where h_id=? 
-2020-08-01 19:22:54.776 DEBUG 5748 --- [http-nio-9797-exec-2] c.w.x.m.S.houseDetail                    : ==> Parameters: 1(Integer)
-2020-08-01 19:22:54.777 DEBUG 5748 --- [http-nio-9797-exec-2] c.w.x.m.S.houseDetail                    : <==      Total: 1
+2020-08-11 18:07:41.304  INFO 21688 --- [main] com.wx.xcx.XcxApplication                : Starting XcxApplication on DESKTOP-8NN5IVC with PID 21688 (C:\Users\48738\Desktop\xcx\target\classes started by 48738 in C:\Users\48738\Desktop\xcx)
+2020-08-11 18:07:41.307  INFO 21688 --- [main] com.wx.xcx.XcxApplication                : No active profile set, falling back to default profiles: default
+2020-08-11 18:07:43.212 ERROR 21688 --- [main] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.2.8] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2020-08-11 18:07:43.358 ERROR 21688 --- [main] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.2.8] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2020-08-11 18:07:43.453  INFO 21688 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9797 (http)
+2020-08-11 18:07:43.462 ERROR 21688 --- [main] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.2.8] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2020-08-11 18:07:43.463  INFO 21688 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-11 18:07:43.464  INFO 21688 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-08-11 18:07:43.559  INFO 21688 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-11 18:07:43.560  INFO 21688 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2169 ms
+2020-08-11 18:07:45.124  INFO 21688 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-08-11 18:07:45.223  INFO 21688 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-11 18:07:45.425  INFO 21688 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9797 (http) with context path ''
+2020-08-11 18:07:45.426  INFO 21688 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-08-11 18:07:45.443  INFO 21688 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-08-11 18:07:45.484  INFO 21688 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-08-11 18:07:45.705  INFO 21688 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: testUsingPOST_1
+2020-08-11 18:07:45.738  INFO 21688 --- [main] com.wx.xcx.XcxApplication                : Started XcxApplication in 5.344 seconds (JVM running for 7.095)
+2020-08-11 18:07:45.741  INFO 21688 --- [main] com.wx.xcx.XcxApplication                : 项目加载完毕
+2020-08-11 18:08:57.988  INFO 21688 --- [http-nio-9797-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-11 18:08:57.989  INFO 21688 --- [http-nio-9797-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-08-11 18:08:58.001  INFO 21688 --- [http-nio-9797-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2020-08-11 18:08:58.076  INFO 21688 --- [http-nio-9797-exec-1] com.zaxxer.hikari.HikariDataSource       : DateSourceHikariCP - Starting...
+2020-08-11 18:08:58.239  INFO 21688 --- [http-nio-9797-exec-1] com.zaxxer.hikari.HikariDataSource       : DateSourceHikariCP - Start completed.
+2020-08-11 18:08:58.247 DEBUG 21688 --- [http-nio-9797-exec-1] c.w.x.mapper.RecruitMapper.recruitList   : ==>  Preparing: select r.z_id,r.z_work_content,r.z_type,r.z_work_requirement,r.z_time,r.z_work_phone,r.z_status,r.z_work_salary,r.z_work_email, r.z_work_address,r.z_work_period,w.work_type_id,w.work_type_value from recruit r left join work_type w on r.z_type=w.work_type_id and w.work_type_id=? and w.work_type_id is not null 
+2020-08-11 18:08:58.274 DEBUG 21688 --- [http-nio-9797-exec-1] c.w.x.mapper.RecruitMapper.recruitList   : ==> Parameters: 2(Integer)
+2020-08-11 18:08:58.313 DEBUG 21688 --- [http-nio-9797-exec-1] c.w.x.mapper.RecruitMapper.recruitList   : <==      Total: 4
+2020-08-11 18:09:51.172  INFO 21864 --- [main] com.wx.xcx.XcxApplication                : Starting XcxApplication on DESKTOP-8NN5IVC with PID 21864 (C:\Users\48738\Desktop\xcx\target\classes started by 48738 in C:\Users\48738\Desktop\xcx)
+2020-08-11 18:09:51.175  INFO 21864 --- [main] com.wx.xcx.XcxApplication                : No active profile set, falling back to default profiles: default
+2020-08-11 18:09:53.074 ERROR 21864 --- [main] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.2.8] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2020-08-11 18:09:53.217 ERROR 21864 --- [main] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.2.8] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2020-08-11 18:09:53.305  INFO 21864 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9797 (http)
+2020-08-11 18:09:53.315 ERROR 21864 --- [main] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.2.8] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2020-08-11 18:09:53.316  INFO 21864 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-11 18:09:53.317  INFO 21864 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-08-11 18:09:53.427  INFO 21864 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-11 18:09:53.428  INFO 21864 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2110 ms
+2020-08-11 18:09:55.018  INFO 21864 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-08-11 18:09:55.099  INFO 21864 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-11 18:09:55.359  INFO 21864 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9797 (http) with context path ''
+2020-08-11 18:09:55.360  INFO 21864 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-08-11 18:09:55.387  INFO 21864 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-08-11 18:09:55.451  INFO 21864 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-08-11 18:09:55.793  INFO 21864 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: testUsingPOST_1
+2020-08-11 18:09:55.840  INFO 21864 --- [main] com.wx.xcx.XcxApplication                : Started XcxApplication in 5.492 seconds (JVM running for 6.912)
+2020-08-11 18:09:55.845  INFO 21864 --- [main] com.wx.xcx.XcxApplication                : 项目加载完毕
+2020-08-11 18:10:17.607  INFO 21864 --- [http-nio-9797-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-11 18:10:17.607  INFO 21864 --- [http-nio-9797-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-08-11 18:10:17.620  INFO 21864 --- [http-nio-9797-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2020-08-11 18:10:17.696  INFO 21864 --- [http-nio-9797-exec-1] com.zaxxer.hikari.HikariDataSource       : DateSourceHikariCP - Starting...
+2020-08-11 18:10:17.856  INFO 21864 --- [http-nio-9797-exec-1] com.zaxxer.hikari.HikariDataSource       : DateSourceHikariCP - Start completed.
+2020-08-11 18:10:17.867 DEBUG 21864 --- [http-nio-9797-exec-1] c.w.x.mapper.RecruitMapper.recruitList   : ==>  Preparing: select r.z_id,r.z_work_content,r.z_type,r.z_work_requirement,r.z_time,r.z_work_phone,r.z_status,r.z_work_salary,r.z_work_email, r.z_work_address,r.z_work_period,w.work_type_id,w.work_type_value from recruit r left join work_type w on r.z_type=w.work_type_id and w.work_type_id is not null and w.work_type_id=? 
+2020-08-11 18:10:17.896 DEBUG 21864 --- [http-nio-9797-exec-1] c.w.x.mapper.RecruitMapper.recruitList   : ==> Parameters: 2(Integer)
+2020-08-11 18:10:17.933 DEBUG 21864 --- [http-nio-9797-exec-1] c.w.x.mapper.RecruitMapper.recruitList   : <==      Total: 4
+2020-08-11 18:14:54.611 DEBUG 21864 --- [http-nio-9797-exec-3] c.w.x.mapper.RecruitMapper.recruitList   : ==>  Preparing: select r.z_id,r.z_work_content,r.z_type,r.z_work_requirement,r.z_time,r.z_work_phone,r.z_status,r.z_work_salary,r.z_work_email, r.z_work_address,r.z_work_period,w.work_type_id,w.work_type_value from recruit r left join work_type w on r.z_type=w.work_type_id and w.work_type_id is not null and w.work_type_id=? 
+2020-08-11 18:14:54.612 DEBUG 21864 --- [http-nio-9797-exec-3] c.w.x.mapper.RecruitMapper.recruitList   : ==> Parameters: 1(Integer)
+2020-08-11 18:14:54.616 DEBUG 21864 --- [http-nio-9797-exec-3] c.w.x.mapper.RecruitMapper.recruitList   : <==      Total: 4
