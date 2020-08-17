@@ -102,19 +102,20 @@
     <insert id="houstInsert">
        insert into second_hand_house (h_address, h_phone,
       h_people, h_content, h_time,
-      h_img,  h_money
+      h_img,  h_money,h_type
       )
     values (#{hAddress,jdbcType=VARCHAR}, #{hPhone,jdbcType=VARCHAR},
       #{hPeople,jdbcType=VARCHAR}, #{hContent,jdbcType=VARCHAR}, #{hTime,jdbcType=TIMESTAMP},
-      #{hImg,jdbcType=VARCHAR},  #{hMoney,jdbcType=VARCHAR}
+      #{hImg,jdbcType=VARCHAR},  #{hMoney,jdbcType=VARCHAR},#{hType}
       )
     </insert>
     <select id="houseDetail" resultMap="houseVO">
-    select h_id, h_address, h_phone,
-      h_people, h_content, h_time,
-      h_img, h_status, h_money
-    from second_hand_house
-    where h_id=#{hId}
+    select h.h_id, h.h_address, h.h_phone,h.h_type,
+        h.h_people, h.h_content, h.h_time,
+        h.h_img, h.h_status, h.h_money,t.hou_id,t.hop_value
+        from second_hand_house h , house_type t
+    where h.h_type = t.hou_id
+    and h_id=#{hId}
   </select>
     <select id="houseList" resultMap="houseVO">
         select h.h_id, h.h_address, h.h_phone,h.h_type,
