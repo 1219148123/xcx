@@ -16,12 +16,17 @@
         <result column="h_id" property="hId" jdbcType="INTEGER"/>
         <result column="h_address" property="hAddress" jdbcType="VARCHAR"/>
         <result column="h_phone" property="hPhone" jdbcType="VARCHAR"/>
+        <result column="h_type" property="hType" jdbcType="VARCHAR"/>
         <result column="h_people" property="hPeople" jdbcType="VARCHAR"/>
         <result column="h_content" property="hContent" jdbcType="VARCHAR"/>
         <result column="h_time" property="hTime" jdbcType="TIMESTAMP"/>
         <result column="h_img" property="hImg" jdbcType="VARCHAR"/>
         <result column="h_status" property="hStatus" jdbcType="INTEGER"/>
         <result column="h_money" property="hMoney" jdbcType="VARCHAR"/>
+        <association property="houseType" javaType="com.wx.xcx.entity.HouseType">
+            <result column="hou_id" jdbcType="INTEGER" property="houId"/>
+            <result column="hop_value" jdbcType="VARCHAR" property="hopValue"/>
+        </association>
     </resultMap>
     <insert id="insert" parameterType="com.wx.xcx.entity.SecondHandHouse">
     insert into second_hand_house (h_id, h_address, h_phone, 
@@ -111,10 +116,14 @@
     from second_hand_house
     where h_id=#{hId}
   </select>
-    <select id="houseList" resultMap="BaseResultMap">
-      select h_id, h_address, h_phone,
-      h_people, h_content, h_time,
-      h_img, h_status, h_money
-    from second_hand_house
-  </select>
+    <select id="houseList" resultMap="houseVO">
+        select h.h_id, h.h_address, h.h_phone,h.h_type,
+        h.h_people, h.h_content, h.h_time,
+        h.h_img, h.h_status, h.h_money,t.hou_id,t.hop_value
+        from second_hand_house h , house_type t
+        where h.h_type = t.hou_id
+        <if test="houType != null and houType != 0">
+            and h.h_type=#{houType}
+        </if>
+    </select>
 </mapper>

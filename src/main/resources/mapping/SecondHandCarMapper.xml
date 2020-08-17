@@ -137,8 +137,8 @@
       s.car_kilometre, s.car_phone, s.car_people,
       s.car_time, s.car_img, s.car_status,
       s.car_original_price, s.car_now_price , c.car_type_id,c.car_type_value
-    from second_hand_car s left join  car_type c
-    on s.car_type=c.car_type_id
+    from second_hand_car s , car_type c
+    where s.car_type=c.car_type_id
     <if test="carType != null and carType != 0">
       and s.car_type=#{carType}
     </if>

@@ -46,7 +46,11 @@ public class SecondHandHouseController {
     }
 
     @GetMapping("list")
-    public List<SecondHandHouseVO> houseList() {
-        return secondHandHouseService.houseList();
+    public List<SecondHandHouseVO> houseList(String houseType) {
+        Integer houType = 0;
+        if (houseType != null && !"".equals(houseType)){
+            houType = Integer.valueOf(houseType);
+        }
+        return secondHandHouseService.houseList(houType);
     }
 }

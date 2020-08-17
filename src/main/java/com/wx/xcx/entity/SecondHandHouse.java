@@ -21,6 +21,16 @@ public class SecondHandHouse {
 
     private String hMoney;
 
+    private String hType;
+
+    public String gethType() {
+        return hType;
+    }
+
+    public void sethType(String hType) {
+        this.hType = hType;
+    }
+
     public Integer gethId() {
         return hId;
     }

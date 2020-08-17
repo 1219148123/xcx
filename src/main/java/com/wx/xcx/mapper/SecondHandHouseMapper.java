@@ -17,5 +17,5 @@ public interface SecondHandHouseMapper {
     SecondHandHouseVO houseDetail(SecondHandHouse secondHandHouse);
 
     //3.查看房子列表
-    List<SecondHandHouseVO> houseList();
+    List<SecondHandHouseVO> houseList(Integer houType);
 }

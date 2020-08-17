@@ -1,7 +1,6 @@
 package com.wx.xcx.service;
 
 import com.wx.xcx.dto.SecondHandHouseDTO;
-import com.wx.xcx.entity.SecondHandHouse;
 import com.wx.xcx.vo.SecondHandHouseVO;
 
 import java.util.List;
@@ -14,5 +13,5 @@ public interface SecondHandHouseService {
     SecondHandHouseVO houseDetail(SecondHandHouseDTO secondHandHouseDTO);
 
     //3.查看房子列表
-    List<SecondHandHouseVO> houseList();
+    List<SecondHandHouseVO> houseList(Integer houType);
 }

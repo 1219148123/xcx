@@ -1,6 +1,7 @@
 package com.wx.xcx.vo;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.wx.xcx.entity.HouseType;
 
 import java.util.Date;
 
@@ -8,6 +9,8 @@ public class SecondHandHouseVO {
     private Integer hId;
 
     private String hAddress;
+
+    private String hType;
 
     private String hPhone;
 
@@ -23,6 +26,24 @@ public class SecondHandHouseVO {
     private Integer hStatus;
 
     private String hMoney;
+
+    private HouseType houseType;
+
+    public String gethType() {
+        return hType;
+    }
+
+    public void sethType(String hType) {
+        this.hType = hType;
+    }
+
+    public HouseType getHouseType() {
+        return houseType;
+    }
+
+    public void setHouseType(HouseType houseType) {
+        this.houseType = houseType;
+    }
 
     public Integer gethId() {
         return hId;

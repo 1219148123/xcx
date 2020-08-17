@@ -2,9 +2,11 @@ package com.wx.xcx.controller;
 
 import com.wx.xcx.entity.CarType;
 import com.wx.xcx.entity.Education;
+import com.wx.xcx.entity.HouseType;
 import com.wx.xcx.entity.WorkType;
 import com.wx.xcx.mapper.CarTypeMapper;
 import com.wx.xcx.mapper.EducationMapper;
+import com.wx.xcx.mapper.HouseTypeMapper;
 import com.wx.xcx.mapper.WorkTypeMapper;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -22,6 +24,8 @@ public class TypeController {
     CarTypeMapper carTypeMapper;
     @Resource
     EducationMapper educationMapper;
+    @Resource
+    HouseTypeMapper houseTypeMapper;
 
     @GetMapping("/workType")
     public List<WorkType> workTypes() {
@@ -36,5 +40,10 @@ public class TypeController {
     @GetMapping("/eduType")
     public List<Education> eduTypes() {
         return educationMapper.eduTypeList();
+    }
+
+    @GetMapping("/houseType")
+    public List<HouseType> houseTypes() {
+        return houseTypeMapper.houseTypeList();
     }
 }

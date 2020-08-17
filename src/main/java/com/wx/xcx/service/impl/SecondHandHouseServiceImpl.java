@@ -32,7 +32,7 @@ public class SecondHandHouseServiceImpl implements SecondHandHouseService {
     }
 
     @Override
-    public List<SecondHandHouseVO> houseList() {
-        return secondHandHouseMapper.houseList();
+    public List<SecondHandHouseVO> houseList(Integer houType) {
+        return secondHandHouseMapper.houseList(houType);
     }
 }

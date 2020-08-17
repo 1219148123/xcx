@@ -135,8 +135,8 @@
         select
         r.z_id,r.z_work_content,r.z_type,r.z_work_requirement,r.z_time,r.z_work_phone,r.z_status,r.z_work_salary,r.z_work_email,
         r.z_work_address,r.z_work_period,w.work_type_id,w.work_type_value
-        from recruit r left join work_type w
-        on r.z_type=w.work_type_id
+        from recruit r , work_type w
+        where r.z_type=w.work_type_id
         <if test="workId != null and workId != 0">
             and w.work_type_id=#{workId}
         </if>
