@@ -34,7 +34,7 @@ logging:
         xcx:
           mapper: debug
   file:
-    name: src\main\resources\logger\myLog.log
+    name: /root/App/xcx/src/main/resources/logger/myLog.log
 
 aliyun:
   endpoint: oss-cn-beijing.aliyuncs.com

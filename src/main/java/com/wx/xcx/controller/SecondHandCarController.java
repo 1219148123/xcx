@@ -25,8 +25,11 @@ public class SecondHandCarController {
     @ApiOperation(value = "二手车上传图片", notes = "二手车上传图片")
     @PostMapping(value = "/carImgUpload")
     public FileUploadResult test(@RequestParam("file") MultipartFile uploadFile) {
-        FileUploadResult upload = this.fileUploadService.upload(uploadFile);
-        this.photo = this.photo + upload.getName() + ",";
+        FileUploadResult upload = null;
+        synchronized (this) {
+            upload = this.fileUploadService.upload(uploadFile);
+            this.photo = this.photo + upload.getName() + ",";
+        }
         return upload;
     }
 
